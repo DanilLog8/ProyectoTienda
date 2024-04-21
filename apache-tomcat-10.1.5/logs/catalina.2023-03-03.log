@@ -1,0 +1,47 @@
+03-Mar-2023 08:29:55.942 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.1.5
+03-Mar-2023 08:29:55.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jan 9 2023 19:52:50 UTC
+03-Mar-2023 08:29:55.949 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.1.5.0
+03-Mar-2023 08:29:55.949 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+03-Mar-2023 08:29:55.949 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+03-Mar-2023 08:29:55.949 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+03-Mar-2023 08:29:55.950 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-19
+03-Mar-2023 08:29:55.950 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       19+36-2238
+03-Mar-2023 08:29:55.950 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+03-Mar-2023 08:29:55.950 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\camer\Documents\Programas\apache-tomcat-10.1.5
+03-Mar-2023 08:29:55.950 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\camer\Documents\Programas\apache-tomcat-10.1.5
+03-Mar-2023 08:29:55.968 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\camer\Documents\Programas\apache-tomcat-10.1.5\conf\logging.properties
+03-Mar-2023 08:29:55.968 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+03-Mar-2023 08:29:55.969 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+03-Mar-2023 08:29:55.969 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+03-Mar-2023 08:29:55.969 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+03-Mar-2023 08:29:55.970 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+03-Mar-2023 08:29:55.970 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+03-Mar-2023 08:29:55.971 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+03-Mar-2023 08:29:55.971 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+03-Mar-2023 08:29:55.971 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\camer\Documents\Programas\apache-tomcat-10.1.5
+03-Mar-2023 08:29:55.972 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\camer\Documents\Programas\apache-tomcat-10.1.5
+03-Mar-2023 08:29:55.972 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\camer\Documents\Programas\apache-tomcat-10.1.5\temp
+03-Mar-2023 08:29:55.978 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Cargada la biblioteca nativa APR de Apache Tomcat [2.0.2] con la versión APR [1.7.0].
+03-Mar-2023 08:29:55.998 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL inicializado correctamente [OpenSSL 3.0.7 1 Nov 2022]
+03-Mar-2023 08:29:56.256 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+03-Mar-2023 08:29:56.284 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [571] milliseconds
+03-Mar-2023 08:29:56.332 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+03-Mar-2023 08:29:56.333 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+03-Mar-2023 08:29:56.347 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\camer\Documents\Programas\apache-tomcat-10.1.5\webapps\docs] de la aplicación web
+03-Mar-2023 08:29:56.677 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\camer\Documents\Programas\apache-tomcat-10.1.5\webapps\docs] has finished in [326] ms
+03-Mar-2023 08:29:56.678 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\camer\Documents\Programas\apache-tomcat-10.1.5\webapps\examples] de la aplicación web
+03-Mar-2023 08:29:57.239 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\camer\Documents\Programas\apache-tomcat-10.1.5\webapps\examples] has finished in [562] ms
+03-Mar-2023 08:29:57.239 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\camer\Documents\Programas\apache-tomcat-10.1.5\webapps\host-manager] de la aplicación web
+03-Mar-2023 08:29:57.292 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\camer\Documents\Programas\apache-tomcat-10.1.5\webapps\host-manager] has finished in [53] ms
+03-Mar-2023 08:29:57.292 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\camer\Documents\Programas\apache-tomcat-10.1.5\webapps\manager] de la aplicación web
+03-Mar-2023 08:29:57.345 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\camer\Documents\Programas\apache-tomcat-10.1.5\webapps\manager] has finished in [53] ms
+03-Mar-2023 08:29:57.346 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\camer\Documents\Programas\apache-tomcat-10.1.5\webapps\ROOT] de la aplicación web
+03-Mar-2023 08:29:57.379 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\camer\Documents\Programas\apache-tomcat-10.1.5\webapps\ROOT] has finished in [32] ms
+03-Mar-2023 08:29:57.382 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+03-Mar-2023 08:29:57.424 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1138] milliseconds
+03-Mar-2023 09:16:30.771 INFO [main] org.apache.catalina.core.StandardServer.await Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+03-Mar-2023 09:16:30.772 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+03-Mar-2023 09:16:30.780 INFO [main] org.apache.catalina.core.StandardService.stopInternal Parando servicio [Catalina]
+03-Mar-2023 09:16:30.806 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+03-Mar-2023 09:16:30.813 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]

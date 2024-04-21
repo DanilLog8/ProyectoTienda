@@ -1,0 +1,290 @@
+14-Feb-2024 10:18:38.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.80
+14-Feb-2024 10:18:38.930 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Aug 23 2023 21:59:38 UTC
+14-Feb-2024 10:18:38.930 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.80.0
+14-Feb-2024 10:18:38.930 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+14-Feb-2024 10:18:38.930 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+14-Feb-2024 10:18:38.931 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+14-Feb-2024 10:18:38.931 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-19
+14-Feb-2024 10:18:38.931 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       19+36-2238
+14-Feb-2024 10:18:38.931 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+14-Feb-2024 10:18:38.931 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80
+14-Feb-2024 10:18:38.931 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80
+14-Feb-2024 10:18:38.947 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+14-Feb-2024 10:18:38.947 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+14-Feb-2024 10:18:38.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+14-Feb-2024 10:18:38.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+14-Feb-2024 10:18:38.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+14-Feb-2024 10:18:38.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\conf\logging.properties
+14-Feb-2024 10:18:38.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+14-Feb-2024 10:18:38.949 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dhttp.nonProxyHosts=localhost|127.0.0.1|LAPTOP-1PICP9GL
+14-Feb-2024 10:18:38.949 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+14-Feb-2024 10:18:38.950 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+14-Feb-2024 10:18:38.951 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dignore.endorsed.dirs=
+14-Feb-2024 10:18:38.951 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80
+14-Feb-2024 10:18:38.951 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80
+14-Feb-2024 10:18:38.952 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\temp
+14-Feb-2024 10:18:38.991 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Cargada la biblioteca nativa APR de Apache Tomcat [1.2.38] con la versión APR [1.7.4].
+14-Feb-2024 10:18:38.991 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Capacidades APR: IPv6 [true], enviar fichero [true], aceptar filtros [false], aleatorio [true], UDS [true].
+14-Feb-2024 10:18:38.992 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+14-Feb-2024 10:18:39.010 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL inicializado correctamente [OpenSSL 1.1.1v  1 Aug 2023]
+14-Feb-2024 10:18:39.320 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+14-Feb-2024 10:18:39.347 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [642] milliseconds
+14-Feb-2024 10:18:39.426 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+14-Feb-2024 10:18:39.426 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.80]
+14-Feb-2024 10:18:39.442 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\conf\Catalina\localhost\BoletinDeProblemas2.xml]
+14-Feb-2024 10:18:39.461 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/BoletinDeProblemas2] in deployment descriptor [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\conf\Catalina\localhost\BoletinDeProblemas2.xml] has been ignored
+14-Feb-2024 10:18:40.587 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+14-Feb-2024 10:18:40.707 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\conf\Catalina\localhost\BoletinDeProblemas2.xml] has finished in [1.263] ms
+14-Feb-2024 10:18:40.708 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\conf\Catalina\localhost\Ejercicio1.xml]
+14-Feb-2024 10:18:40.709 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/Ejercicio1] in deployment descriptor [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\conf\Catalina\localhost\Ejercicio1.xml] has been ignored
+14-Feb-2024 10:18:40.714 SEVERE [main] org.apache.catalina.startup.HostConfig.deployDescriptor Error durante el despliegue del descriptor de configuración [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\conf\Catalina\localhost\Ejercicio1.xml]
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:686)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:662)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:689)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1888)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:582)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:472)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1617)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:318)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:893)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:795)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:249)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:922)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+	Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@de88ac6]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:186)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4575)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4708)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
+		... 35 more
+	Caused by: java.lang.IllegalArgumentException: The main resource set specified [C:\Users\camer\Desktop\2º DAW (I.E.S. Camas)\NetBeansProjects\Desarrollo web en entorno servidor\Examen\Ejercicio1\build\web] is not a directory or war file, or is not readable (it does not exist or permissions to access it are missing)
+		at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:749)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:707)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		... 39 more
+14-Feb-2024 10:18:40.724 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\conf\Catalina\localhost\Ejercicio1.xml] has finished in [15] ms
+14-Feb-2024 10:18:40.724 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\conf\Catalina\localhost\Ejercicio2.xml]
+14-Feb-2024 10:18:40.725 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/Ejercicio2] in deployment descriptor [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\conf\Catalina\localhost\Ejercicio2.xml] has been ignored
+14-Feb-2024 10:18:40.731 SEVERE [main] org.apache.catalina.startup.HostConfig.deployDescriptor Error durante el despliegue del descriptor de configuración [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\conf\Catalina\localhost\Ejercicio2.xml]
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:686)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:662)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:689)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1888)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:582)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:472)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1617)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:318)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:893)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:795)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:249)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:922)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+	Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@1cb19dba]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:186)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4575)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4708)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
+		... 35 more
+	Caused by: java.lang.IllegalArgumentException: The main resource set specified [C:\Users\camer\Desktop\2º DAW (I.E.S. Camas)\NetBeansProjects\Desarrollo web en entorno servidor\Examen\Ejercicio2\build\web] is not a directory or war file, or is not readable (it does not exist or permissions to access it are missing)
+		at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:749)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:707)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		... 39 more
+14-Feb-2024 10:18:41.262 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\conf\Catalina\localhost\Ejercicio2.xml] has finished in [538] ms
+14-Feb-2024 10:18:41.262 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\conf\Catalina\localhost\Empresa2023.xml]
+14-Feb-2024 10:18:41.264 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/Empresa2023] in deployment descriptor [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\conf\Catalina\localhost\Empresa2023.xml] has been ignored
+14-Feb-2024 10:18:43.212 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+14-Feb-2024 10:18:43.219 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\conf\Catalina\localhost\Empresa2023.xml] has finished in [1.956] ms
+14-Feb-2024 10:18:43.219 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\conf\Catalina\localhost\GestionProductos.xml]
+14-Feb-2024 10:18:43.220 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/GestionProductos] in deployment descriptor [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\conf\Catalina\localhost\GestionProductos.xml] has been ignored
+14-Feb-2024 10:18:43.338 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\conf\Catalina\localhost\GestionProductos.xml] has finished in [119] ms
+14-Feb-2024 10:18:43.338 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\conf\Catalina\localhost\HolaMundoWeb.xml]
+14-Feb-2024 10:18:43.340 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/HolaMundoWeb] in deployment descriptor [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\conf\Catalina\localhost\HolaMundoWeb.xml] has been ignored
+14-Feb-2024 10:18:43.444 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\conf\Catalina\localhost\HolaMundoWeb.xml] has finished in [106] ms
+14-Feb-2024 10:18:43.444 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\conf\Catalina\localhost\Laberinto.xml]
+14-Feb-2024 10:18:43.446 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/Laberinto] in deployment descriptor [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\conf\Catalina\localhost\Laberinto.xml] has been ignored
+14-Feb-2024 10:18:43.551 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\conf\Catalina\localhost\Laberinto.xml] has finished in [106] ms
+14-Feb-2024 10:18:43.551 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\conf\Catalina\localhost\PruebaAjax.xml]
+14-Feb-2024 10:18:43.553 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/PruebaAjax] in deployment descriptor [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\conf\Catalina\localhost\PruebaAjax.xml] has been ignored
+14-Feb-2024 10:18:44.159 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+14-Feb-2024 10:18:44.164 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\conf\Catalina\localhost\PruebaAjax.xml] has finished in [613] ms
+14-Feb-2024 10:18:44.164 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\conf\Catalina\localhost\pruebaTagLib.xml]
+14-Feb-2024 10:18:44.165 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/pruebaTagLib] in deployment descriptor [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\conf\Catalina\localhost\pruebaTagLib.xml] has been ignored
+14-Feb-2024 10:18:44.316 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+14-Feb-2024 10:18:44.353 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\conf\Catalina\localhost\pruebaTagLib.xml] has finished in [188] ms
+14-Feb-2024 10:18:44.353 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\webapps\docs] de la aplicación web
+14-Feb-2024 10:18:44.442 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\webapps\docs] has finished in [89] ms
+14-Feb-2024 10:18:44.443 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\webapps\examples] de la aplicación web
+14-Feb-2024 10:18:45.013 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\webapps\examples] has finished in [571] ms
+14-Feb-2024 10:18:45.014 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\webapps\host-manager] de la aplicación web
+14-Feb-2024 10:18:45.092 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\webapps\host-manager] has finished in [79] ms
+14-Feb-2024 10:18:45.093 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\webapps\manager] de la aplicación web
+14-Feb-2024 10:18:45.182 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\webapps\manager] has finished in [89] ms
+14-Feb-2024 10:18:45.182 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\webapps\ROOT] de la aplicación web
+14-Feb-2024 10:18:45.248 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\webapps\ROOT] has finished in [66] ms
+14-Feb-2024 10:18:45.251 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+14-Feb-2024 10:18:45.286 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [5936] milliseconds
+14-Feb-2024 10:18:52.230 INFO [http-nio-8080-exec-2] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\conf\Catalina\localhost\FileUpload.xml]
+14-Feb-2024 10:18:52.231 WARNING [http-nio-8080-exec-2] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/FileUpload] in deployment descriptor [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\conf\Catalina\localhost\FileUpload.xml] has been ignored
+14-Feb-2024 10:18:52.344 INFO [http-nio-8080-exec-2] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\camer\Documents\Programas\apache-tomcat-9.0.80\conf\Catalina\localhost\FileUpload.xml] has finished in [113] ms
+14-Feb-2024 10:18:52.347 INFO [http-nio-8080-exec-1] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/FileUpload]] after start() had already been called. The second call will be ignored.
+14-Feb-2024 10:21:10.540 INFO [http-nio-8080-exec-7] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 10:21:10.637 INFO [http-nio-8080-exec-7] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 10:21:14.246 INFO [http-nio-8080-exec-1] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 10:21:14.335 INFO [http-nio-8080-exec-1] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 10:23:23.761 INFO [http-nio-8080-exec-3] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 10:23:23.853 INFO [http-nio-8080-exec-3] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 10:26:26.402 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Falló la recarga del contexto [/FileUpload]
+14-Feb-2024 10:26:26.402 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 10:26:26.521 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 10:37:48.027 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Falló la recarga del contexto [/FileUpload]
+14-Feb-2024 10:37:48.027 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 10:37:48.121 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 10:39:04.481 INFO [http-nio-8080-exec-44] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 10:39:04.590 INFO [http-nio-8080-exec-44] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 10:39:46.723 INFO [http-nio-8080-exec-42] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 10:39:46.812 INFO [http-nio-8080-exec-42] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 10:39:55.753 INFO [http-nio-8080-exec-34] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 10:39:55.849 INFO [http-nio-8080-exec-34] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 10:40:04.815 INFO [http-nio-8080-exec-42] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 10:40:04.913 INFO [http-nio-8080-exec-42] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 10:40:11.263 INFO [http-nio-8080-exec-50] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 10:40:11.354 INFO [http-nio-8080-exec-50] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 10:40:21.344 INFO [http-nio-8080-exec-42] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 10:40:21.429 INFO [http-nio-8080-exec-42] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 10:40:58.304 INFO [http-nio-8080-exec-51] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 10:40:58.391 INFO [http-nio-8080-exec-51] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 10:43:05.619 INFO [http-nio-8080-exec-36] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 10:43:05.706 INFO [http-nio-8080-exec-36] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 10:43:16.040 INFO [http-nio-8080-exec-57] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 10:43:16.125 INFO [http-nio-8080-exec-57] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 10:43:25.392 INFO [http-nio-8080-exec-56] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 10:43:25.483 INFO [http-nio-8080-exec-56] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 10:43:59.724 INFO [http-nio-8080-exec-34] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 10:43:59.817 INFO [http-nio-8080-exec-34] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 10:44:46.821 INFO [http-nio-8080-exec-36] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 10:44:46.907 INFO [http-nio-8080-exec-36] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 10:47:04.333 INFO [http-nio-8080-exec-66] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 10:47:04.418 INFO [http-nio-8080-exec-66] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 10:47:23.906 INFO [http-nio-8080-exec-68] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 10:47:23.992 INFO [http-nio-8080-exec-68] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 10:50:39.489 INFO [http-nio-8080-exec-77] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 10:50:39.576 INFO [http-nio-8080-exec-77] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 10:50:52.829 INFO [http-nio-8080-exec-71] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 10:50:52.913 INFO [http-nio-8080-exec-71] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 10:51:04.702 INFO [http-nio-8080-exec-75] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 10:51:04.796 INFO [http-nio-8080-exec-75] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 10:51:08.203 INFO [http-nio-8080-exec-78] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 10:51:08.291 INFO [http-nio-8080-exec-78] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 10:55:41.453 INFO [http-nio-8080-exec-85] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 10:55:41.547 INFO [http-nio-8080-exec-85] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 10:55:48.639 INFO [http-nio-8080-exec-92] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 10:55:48.748 INFO [http-nio-8080-exec-92] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 10:55:52.902 INFO [http-nio-8080-exec-90] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 10:55:52.997 INFO [http-nio-8080-exec-90] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 10:57:07.413 INFO [http-nio-8080-exec-86] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 10:57:07.507 INFO [http-nio-8080-exec-86] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 10:57:18.371 INFO [http-nio-8080-exec-87] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 10:57:18.473 INFO [http-nio-8080-exec-87] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 10:58:15.596 INFO [http-nio-8080-exec-92] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 10:58:15.700 INFO [http-nio-8080-exec-92] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 10:58:15.868 INFO [http-nio-8080-exec-96] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 10:58:15.965 INFO [http-nio-8080-exec-96] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 10:59:15.133 INFO [http-nio-8080-exec-83] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 10:59:15.229 INFO [http-nio-8080-exec-83] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 10:59:16.531 INFO [http-nio-8080-exec-92] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 10:59:16.627 INFO [http-nio-8080-exec-92] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 11:00:43.171 INFO [http-nio-8080-exec-101] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 11:00:43.265 INFO [http-nio-8080-exec-101] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 11:01:58.993 INFO [http-nio-8080-exec-100] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 11:01:59.083 INFO [http-nio-8080-exec-100] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 11:02:51.616 INFO [http-nio-8080-exec-89] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 11:02:51.717 INFO [http-nio-8080-exec-89] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 11:04:31.407 INFO [http-nio-8080-exec-104] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 11:04:31.498 INFO [http-nio-8080-exec-104] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 11:04:42.632 INFO [http-nio-8080-exec-107] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 11:04:42.731 INFO [http-nio-8080-exec-107] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 11:04:57.079 INFO [http-nio-8080-exec-103] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 11:04:57.171 INFO [http-nio-8080-exec-103] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 11:05:08.190 INFO [http-nio-8080-exec-107] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 11:05:08.282 INFO [http-nio-8080-exec-107] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 11:05:15.771 INFO [http-nio-8080-exec-110] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 11:05:15.870 INFO [http-nio-8080-exec-110] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 11:05:23.252 INFO [http-nio-8080-exec-112] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 11:05:23.347 INFO [http-nio-8080-exec-112] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 11:06:08.054 INFO [http-nio-8080-exec-103] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 11:06:08.143 INFO [http-nio-8080-exec-103] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 11:10:01.228 INFO [http-nio-8080-exec-115] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 11:10:01.329 INFO [http-nio-8080-exec-115] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 11:10:26.591 INFO [http-nio-8080-exec-100] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 11:10:26.688 INFO [http-nio-8080-exec-100] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 11:10:30.817 INFO [http-nio-8080-exec-115] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 11:10:30.908 INFO [http-nio-8080-exec-115] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 11:10:34.663 INFO [http-nio-8080-exec-100] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 11:10:34.766 INFO [http-nio-8080-exec-100] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 11:12:15.750 INFO [http-nio-8080-exec-100] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 11:12:15.847 INFO [http-nio-8080-exec-100] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 11:15:05.460 INFO [http-nio-8080-exec-137] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 11:15:05.565 INFO [http-nio-8080-exec-137] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 11:15:09.340 INFO [http-nio-8080-exec-135] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 11:15:09.447 INFO [http-nio-8080-exec-135] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 11:15:12.688 INFO [http-nio-8080-exec-136] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/FileUpload]
+14-Feb-2024 11:15:12.797 INFO [http-nio-8080-exec-136] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+14-Feb-2024 11:15:37.889 INFO [main] org.apache.catalina.core.StandardServer.await Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+14-Feb-2024 11:15:37.889 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+14-Feb-2024 11:15:37.904 INFO [main] org.apache.catalina.core.StandardService.stopInternal Parando servicio [Catalina]
+14-Feb-2024 11:15:37.918 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+14-Feb-2024 11:15:37.937 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
