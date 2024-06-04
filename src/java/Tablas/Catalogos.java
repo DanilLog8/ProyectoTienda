@@ -5,7 +5,6 @@
 package Tablas;
 
 import java.io.Serializable;
-import java.util.Collection;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -14,11 +13,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlTransient;
 
 /**
  *
@@ -42,10 +39,6 @@ public class Catalogos implements Serializable {
     @Size(max = 100)
     @Column(name = "nombre")
     private String nombre;
-    @OneToMany(mappedBy = "catalogoId")
-    private Collection<CodigosDescuento> codigosDescuentoCollection;
-    @OneToMany(mappedBy = "catalogoId")
-    private Collection<Articulos> articulosCollection;
 
     public Catalogos() {
     }
@@ -68,24 +61,6 @@ public class Catalogos implements Serializable {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
-
-    @XmlTransient
-    public Collection<CodigosDescuento> getCodigosDescuentoCollection() {
-        return codigosDescuentoCollection;
-    }
-
-    public void setCodigosDescuentoCollection(Collection<CodigosDescuento> codigosDescuentoCollection) {
-        this.codigosDescuentoCollection = codigosDescuentoCollection;
-    }
-
-    @XmlTransient
-    public Collection<Articulos> getArticulosCollection() {
-        return articulosCollection;
-    }
-
-    public void setArticulosCollection(Collection<Articulos> articulosCollection) {
-        this.articulosCollection = articulosCollection;
     }
 
     @Override

@@ -1,0 +1,131 @@
+04-Jun-2024 10:05:21.617 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+04-Jun-2024 10:05:21.617 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+04-Jun-2024 10:05:21.618 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@276961df')
+04-Jun-2024 10:10:46.784 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/TiendaOnline] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [94] en el archivo jsp: [/SobreNosotros.jsp]
+BigDecimal cannot be resolved to a type
+91:                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+92:                                     <li><a class="dropdown-item" href="modificarDatos">Modificar Datos</a></li>
+93:                                     <li><a class="dropdown-item" href="donarRopa">Donar Ropa</a></li>
+94:                                         <% BigDecimal huchaUsuario = (BigDecimal) request.getAttribute("saldoHucha");%>
+95:                                     <li style="margin-left:15px;"><%= huchaUsuario != null ? huchaUsuario + "?" : "0.00?"%></li>
+96:                                     <li><a class="dropdown-item" href="cerrarSesion">Cerrar Sesión</a></li>
+97:                                 </ul>
+
+
+Ha tenido lugar un error en la línea: [94] en el archivo jsp: [/SobreNosotros.jsp]
+BigDecimal cannot be resolved to a type
+91:                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+92:                                     <li><a class="dropdown-item" href="modificarDatos">Modificar Datos</a></li>
+93:                                     <li><a class="dropdown-item" href="donarRopa">Donar Ropa</a></li>
+94:                                         <% BigDecimal huchaUsuario = (BigDecimal) request.getAttribute("saldoHucha");%>
+95:                                     <li style="margin-left:15px;"><%= huchaUsuario != null ? huchaUsuario + "?" : "0.00?"%></li>
+96:                                     <li><a class="dropdown-item" href="cerrarSesion">Cerrar Sesión</a></li>
+97:                                 </ul>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [94] en el archivo jsp: [/SobreNosotros.jsp]
+BigDecimal cannot be resolved to a type
+91:                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+92:                                     <li><a class="dropdown-item" href="modificarDatos">Modificar Datos</a></li>
+93:                                     <li><a class="dropdown-item" href="donarRopa">Donar Ropa</a></li>
+94:                                         <% BigDecimal huchaUsuario = (BigDecimal) request.getAttribute("saldoHucha");%>
+95:                                     <li style="margin-left:15px;"><%= huchaUsuario != null ? huchaUsuario + "?" : "0.00?"%></li>
+96:                                     <li><a class="dropdown-item" href="cerrarSesion">Cerrar Sesión</a></li>
+97:                                 </ul>
+
+
+Ha tenido lugar un error en la línea: [94] en el archivo jsp: [/SobreNosotros.jsp]
+BigDecimal cannot be resolved to a type
+91:                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+92:                                     <li><a class="dropdown-item" href="modificarDatos">Modificar Datos</a></li>
+93:                                     <li><a class="dropdown-item" href="donarRopa">Donar Ropa</a></li>
+94:                                         <% BigDecimal huchaUsuario = (BigDecimal) request.getAttribute("saldoHucha");%>
+95:                                     <li style="margin-left:15px;"><%= huchaUsuario != null ? huchaUsuario + "?" : "0.00?"%></li>
+96:                                     <li><a class="dropdown-item" href="cerrarSesion">Cerrar Sesión</a></li>
+97:                                 </ul>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+04-Jun-2024 10:57:16.846 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/TiendaOnline] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/Home.jsp] en línea [59]
+
+56:                             <li class="nav-item">
+57:                                 <% if (session.getAttribute("usuario") != null && !session.getAttribute("usuario").equals("Trabajador1")) { %>
+58:                                 <a class="nav-link" href="Home2.jsp">Home</a>
+59:                                 <% } else if (session.getAttribute("usuario").equals("Trabajador1")) { %>
+60:                                 <a class="nav-link" href="Home2Trabajador.jsp">Home</a>
+61:                                 <% } else if (session.getAttribute("usuario") == null) {%>
+62:                                 <a class="nav-link" href="Home.jsp">Home</a>
+
+
+Stacktrace:] con causa raíz
+	java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "javax.servlet.http.HttpSession.getAttribute(String)" is null
+		at org.apache.jsp.Home_jsp._jspService(Home_jsp.java:177)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+04-Jun-2024 15:37:37.606 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+04-Jun-2024 15:37:37.606 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+04-Jun-2024 15:37:37.608 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@6e04275e')

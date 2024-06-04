@@ -1,0 +1,1536 @@
+30-May-2024 17:06:50.023 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-May-2024 17:06:50.023 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-May-2024 17:06:50.024 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@614b49a2')
+30-May-2024 17:15:15.580 SEVERE [http-nio-8080-exec-40] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [MostrarUsuariosServlet] en el contexto con ruta [/TiendaOnline] lanzó la excepción [La ejecución del Servlet lanzó una excepción] con causa raíz
+	java.lang.NoSuchMethodError: 'java.util.List DAO.UsuarioDAO.obtenerUsuarios()'
+		at Usuario.MostrarUsuariosServlet.doGet(MostrarUsuariosServlet.java:21)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+30-May-2024 18:12:28.210 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-May-2024 18:12:28.210 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-May-2024 18:13:56.034 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-May-2024 18:13:56.035 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-May-2024 18:13:56.036 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@6b6a60f4')
+30-May-2024 18:30:25.707 SEVERE [http-nio-8080-exec-16] org.apache.catalina.core.ApplicationDispatcher.invoke El Servlet.service() para servlet [jsp] lanzó una excepción
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [104] en el archivo jsp: [/DetalleProducto.jsp]
+BigDecimal cannot be resolved to a type
+101:                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+102:                                     <li><a class="dropdown-item" href="modificarDatos">Modificar Datos</a></li>
+103:                                     <li><a class="dropdown-item" href="donarRopa">Donar Ropa</a></li>
+104:                                     <% BigDecimal huchaUsuario = (BigDecimal) request.getAttribute("huchaUsuario"); %>
+105:                                     <li style="margin-left:15px;"><%= huchaUsuario != null ? huchaUsuario + "$" : "0.00$" %></li>
+106:                                     <li><a class="dropdown-item" href="cerrarSesion">Cerrar SesiÃ³n</a></li>
+107:                                 </ul>
+
+
+Ha tenido lugar un error en la línea: [104] en el archivo jsp: [/DetalleProducto.jsp]
+BigDecimal cannot be resolved to a type
+101:                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+102:                                     <li><a class="dropdown-item" href="modificarDatos">Modificar Datos</a></li>
+103:                                     <li><a class="dropdown-item" href="donarRopa">Donar Ropa</a></li>
+104:                                     <% BigDecimal huchaUsuario = (BigDecimal) request.getAttribute("huchaUsuario"); %>
+105:                                     <li style="margin-left:15px;"><%= huchaUsuario != null ? huchaUsuario + "$" : "0.00$" %></li>
+106:                                     <li><a class="dropdown-item" href="cerrarSesion">Cerrar SesiÃ³n</a></li>
+107:                                 </ul>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:661)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:425)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:357)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:294)
+		at Articulos.DetalleProductoServlet.doGet(DetalleProductoServlet.java:23)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+30-May-2024 18:30:25.707 SEVERE [http-nio-8080-exec-16] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [Articulos.DetalleProductoServlet] en el contexto con ruta [/TiendaOnline] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [104] en el archivo jsp: [/DetalleProducto.jsp]
+BigDecimal cannot be resolved to a type
+101:                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+102:                                     <li><a class="dropdown-item" href="modificarDatos">Modificar Datos</a></li>
+103:                                     <li><a class="dropdown-item" href="donarRopa">Donar Ropa</a></li>
+104:                                     <% BigDecimal huchaUsuario = (BigDecimal) request.getAttribute("huchaUsuario"); %>
+105:                                     <li style="margin-left:15px;"><%= huchaUsuario != null ? huchaUsuario + "$" : "0.00$" %></li>
+106:                                     <li><a class="dropdown-item" href="cerrarSesion">Cerrar SesiÃ³n</a></li>
+107:                                 </ul>
+
+
+Ha tenido lugar un error en la línea: [104] en el archivo jsp: [/DetalleProducto.jsp]
+BigDecimal cannot be resolved to a type
+101:                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+102:                                     <li><a class="dropdown-item" href="modificarDatos">Modificar Datos</a></li>
+103:                                     <li><a class="dropdown-item" href="donarRopa">Donar Ropa</a></li>
+104:                                     <% BigDecimal huchaUsuario = (BigDecimal) request.getAttribute("huchaUsuario"); %>
+105:                                     <li style="margin-left:15px;"><%= huchaUsuario != null ? huchaUsuario + "$" : "0.00$" %></li>
+106:                                     <li><a class="dropdown-item" href="cerrarSesion">Cerrar SesiÃ³n</a></li>
+107:                                 </ul>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [104] en el archivo jsp: [/DetalleProducto.jsp]
+BigDecimal cannot be resolved to a type
+101:                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+102:                                     <li><a class="dropdown-item" href="modificarDatos">Modificar Datos</a></li>
+103:                                     <li><a class="dropdown-item" href="donarRopa">Donar Ropa</a></li>
+104:                                     <% BigDecimal huchaUsuario = (BigDecimal) request.getAttribute("huchaUsuario"); %>
+105:                                     <li style="margin-left:15px;"><%= huchaUsuario != null ? huchaUsuario + "$" : "0.00$" %></li>
+106:                                     <li><a class="dropdown-item" href="cerrarSesion">Cerrar SesiÃ³n</a></li>
+107:                                 </ul>
+
+
+Ha tenido lugar un error en la línea: [104] en el archivo jsp: [/DetalleProducto.jsp]
+BigDecimal cannot be resolved to a type
+101:                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+102:                                     <li><a class="dropdown-item" href="modificarDatos">Modificar Datos</a></li>
+103:                                     <li><a class="dropdown-item" href="donarRopa">Donar Ropa</a></li>
+104:                                     <% BigDecimal huchaUsuario = (BigDecimal) request.getAttribute("huchaUsuario"); %>
+105:                                     <li style="margin-left:15px;"><%= huchaUsuario != null ? huchaUsuario + "$" : "0.00$" %></li>
+106:                                     <li><a class="dropdown-item" href="cerrarSesion">Cerrar SesiÃ³n</a></li>
+107:                                 </ul>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:661)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:425)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:357)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:294)
+		at Articulos.DetalleProductoServlet.doGet(DetalleProductoServlet.java:23)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+30-May-2024 18:30:31.252 SEVERE [http-nio-8080-exec-20] org.apache.catalina.core.ApplicationDispatcher.invoke El Servlet.service() para servlet [jsp] lanzó una excepción
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [104] en el archivo jsp: [/DetalleProducto.jsp]
+BigDecimal cannot be resolved to a type
+101:                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+102:                                     <li><a class="dropdown-item" href="modificarDatos">Modificar Datos</a></li>
+103:                                     <li><a class="dropdown-item" href="donarRopa">Donar Ropa</a></li>
+104:                                     <% BigDecimal huchaUsuario = (BigDecimal) request.getAttribute("huchaUsuario"); %>
+105:                                     <li style="margin-left:15px;"><%= huchaUsuario != null ? huchaUsuario + "$" : "0.00$" %></li>
+106:                                     <li><a class="dropdown-item" href="cerrarSesion">Cerrar SesiÃ³n</a></li>
+107:                                 </ul>
+
+
+Ha tenido lugar un error en la línea: [104] en el archivo jsp: [/DetalleProducto.jsp]
+BigDecimal cannot be resolved to a type
+101:                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+102:                                     <li><a class="dropdown-item" href="modificarDatos">Modificar Datos</a></li>
+103:                                     <li><a class="dropdown-item" href="donarRopa">Donar Ropa</a></li>
+104:                                     <% BigDecimal huchaUsuario = (BigDecimal) request.getAttribute("huchaUsuario"); %>
+105:                                     <li style="margin-left:15px;"><%= huchaUsuario != null ? huchaUsuario + "$" : "0.00$" %></li>
+106:                                     <li><a class="dropdown-item" href="cerrarSesion">Cerrar SesiÃ³n</a></li>
+107:                                 </ul>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:661)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:425)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:357)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:294)
+		at Articulos.DetalleProductoServlet.doGet(DetalleProductoServlet.java:23)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+30-May-2024 18:30:31.252 SEVERE [http-nio-8080-exec-20] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [Articulos.DetalleProductoServlet] en el contexto con ruta [/TiendaOnline] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [104] en el archivo jsp: [/DetalleProducto.jsp]
+BigDecimal cannot be resolved to a type
+101:                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+102:                                     <li><a class="dropdown-item" href="modificarDatos">Modificar Datos</a></li>
+103:                                     <li><a class="dropdown-item" href="donarRopa">Donar Ropa</a></li>
+104:                                     <% BigDecimal huchaUsuario = (BigDecimal) request.getAttribute("huchaUsuario"); %>
+105:                                     <li style="margin-left:15px;"><%= huchaUsuario != null ? huchaUsuario + "$" : "0.00$" %></li>
+106:                                     <li><a class="dropdown-item" href="cerrarSesion">Cerrar SesiÃ³n</a></li>
+107:                                 </ul>
+
+
+Ha tenido lugar un error en la línea: [104] en el archivo jsp: [/DetalleProducto.jsp]
+BigDecimal cannot be resolved to a type
+101:                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+102:                                     <li><a class="dropdown-item" href="modificarDatos">Modificar Datos</a></li>
+103:                                     <li><a class="dropdown-item" href="donarRopa">Donar Ropa</a></li>
+104:                                     <% BigDecimal huchaUsuario = (BigDecimal) request.getAttribute("huchaUsuario"); %>
+105:                                     <li style="margin-left:15px;"><%= huchaUsuario != null ? huchaUsuario + "$" : "0.00$" %></li>
+106:                                     <li><a class="dropdown-item" href="cerrarSesion">Cerrar SesiÃ³n</a></li>
+107:                                 </ul>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [104] en el archivo jsp: [/DetalleProducto.jsp]
+BigDecimal cannot be resolved to a type
+101:                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+102:                                     <li><a class="dropdown-item" href="modificarDatos">Modificar Datos</a></li>
+103:                                     <li><a class="dropdown-item" href="donarRopa">Donar Ropa</a></li>
+104:                                     <% BigDecimal huchaUsuario = (BigDecimal) request.getAttribute("huchaUsuario"); %>
+105:                                     <li style="margin-left:15px;"><%= huchaUsuario != null ? huchaUsuario + "$" : "0.00$" %></li>
+106:                                     <li><a class="dropdown-item" href="cerrarSesion">Cerrar SesiÃ³n</a></li>
+107:                                 </ul>
+
+
+Ha tenido lugar un error en la línea: [104] en el archivo jsp: [/DetalleProducto.jsp]
+BigDecimal cannot be resolved to a type
+101:                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+102:                                     <li><a class="dropdown-item" href="modificarDatos">Modificar Datos</a></li>
+103:                                     <li><a class="dropdown-item" href="donarRopa">Donar Ropa</a></li>
+104:                                     <% BigDecimal huchaUsuario = (BigDecimal) request.getAttribute("huchaUsuario"); %>
+105:                                     <li style="margin-left:15px;"><%= huchaUsuario != null ? huchaUsuario + "$" : "0.00$" %></li>
+106:                                     <li><a class="dropdown-item" href="cerrarSesion">Cerrar SesiÃ³n</a></li>
+107:                                 </ul>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:661)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:425)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:357)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:294)
+		at Articulos.DetalleProductoServlet.doGet(DetalleProductoServlet.java:23)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+30-May-2024 19:12:50.170 SEVERE [http-nio-8080-exec-35] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() para servlet [Articulos.DetalleProductoServlet] lanzó excepción
+	java.lang.IllegalArgumentException: An exception occurred while creating a query in EntityManager: 
+Exception Description: Problem compiling [SELECT DISTINCT atp.idtallaPie.nombre FROM ArticuloTallapie atp WHERE atp.idArticulo.id = :idProducto]. 
+[16, 37] The state field path 'atp.idtallaPie.nombre' cannot be resolved to a valid type.
+		at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1616)
+		at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1636)
+		at DAO.ArticuloDAO.obtenerTallasDisponiblesPorID(ArticuloDAO.java:74)
+		at Articulos.DetalleProductoServlet.doGet(DetalleProductoServlet.java:24)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+	Caused by: Exception [EclipseLink-0] (Eclipse Persistence Services - 2.6.9.v20200130-0143b822bc): org.eclipse.persistence.exceptions.JPQLException
+Exception Description: Problem compiling [SELECT DISTINCT atp.idtallaPie.nombre FROM ArticuloTallapie atp WHERE atp.idArticulo.id = :idProducto]. 
+[16, 37] The state field path 'atp.idtallaPie.nombre' cannot be resolved to a valid type.
+		at org.eclipse.persistence.internal.jpa.jpql.HermesParser.buildException(HermesParser.java:155)
+		at org.eclipse.persistence.internal.jpa.jpql.HermesParser.validate(HermesParser.java:347)
+		at org.eclipse.persistence.internal.jpa.jpql.HermesParser.populateQueryImp(HermesParser.java:278)
+		at org.eclipse.persistence.internal.jpa.jpql.HermesParser.buildQuery(HermesParser.java:163)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.buildEJBQLDatabaseQuery(EJBQueryImpl.java:142)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.buildEJBQLDatabaseQuery(EJBQueryImpl.java:116)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.<init>(EJBQueryImpl.java:102)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.<init>(EJBQueryImpl.java:86)
+		at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1614)
+		... 27 more
+30-May-2024 19:16:51.045 SEVERE [http-nio-8080-exec-34] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() para servlet [Articulos.DetalleProductoServlet] lanzó excepción
+	java.lang.IllegalArgumentException: An exception occurred while creating a query in EntityManager: 
+Exception Description: Problem compiling [SELECT DISTINCT atp.idtallaPie.nombre FROM ArticuloTallapie atp WHERE atp.idArticulo.id = :idProducto]. 
+[16, 37] The state field path 'atp.idtallaPie.nombre' cannot be resolved to a valid type.
+		at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1616)
+		at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1636)
+		at DAO.ArticuloDAO.obtenerTallasDisponiblesPorID(ArticuloDAO.java:74)
+		at Articulos.DetalleProductoServlet.doGet(DetalleProductoServlet.java:25)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+	Caused by: Exception [EclipseLink-0] (Eclipse Persistence Services - 2.6.9.v20200130-0143b822bc): org.eclipse.persistence.exceptions.JPQLException
+Exception Description: Problem compiling [SELECT DISTINCT atp.idtallaPie.nombre FROM ArticuloTallapie atp WHERE atp.idArticulo.id = :idProducto]. 
+[16, 37] The state field path 'atp.idtallaPie.nombre' cannot be resolved to a valid type.
+		at org.eclipse.persistence.internal.jpa.jpql.HermesParser.buildException(HermesParser.java:155)
+		at org.eclipse.persistence.internal.jpa.jpql.HermesParser.validate(HermesParser.java:347)
+		at org.eclipse.persistence.internal.jpa.jpql.HermesParser.populateQueryImp(HermesParser.java:278)
+		at org.eclipse.persistence.internal.jpa.jpql.HermesParser.buildQuery(HermesParser.java:163)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.buildEJBQLDatabaseQuery(EJBQueryImpl.java:142)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.buildEJBQLDatabaseQuery(EJBQueryImpl.java:116)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.<init>(EJBQueryImpl.java:102)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.<init>(EJBQueryImpl.java:86)
+		at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1614)
+		... 27 more
+30-May-2024 19:16:55.685 SEVERE [http-nio-8080-exec-41] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() para servlet [Articulos.DetalleProductoServlet] lanzó excepción
+	java.lang.IllegalArgumentException: An exception occurred while creating a query in EntityManager: 
+Exception Description: Problem compiling [SELECT DISTINCT atp.idtallaPie.nombre FROM ArticuloTallapie atp WHERE atp.idArticulo.id = :idProducto]. 
+[16, 37] The state field path 'atp.idtallaPie.nombre' cannot be resolved to a valid type.
+		at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1616)
+		at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1636)
+		at DAO.ArticuloDAO.obtenerTallasDisponiblesPorID(ArticuloDAO.java:74)
+		at Articulos.DetalleProductoServlet.doGet(DetalleProductoServlet.java:25)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+	Caused by: Exception [EclipseLink-0] (Eclipse Persistence Services - 2.6.9.v20200130-0143b822bc): org.eclipse.persistence.exceptions.JPQLException
+Exception Description: Problem compiling [SELECT DISTINCT atp.idtallaPie.nombre FROM ArticuloTallapie atp WHERE atp.idArticulo.id = :idProducto]. 
+[16, 37] The state field path 'atp.idtallaPie.nombre' cannot be resolved to a valid type.
+		at org.eclipse.persistence.internal.jpa.jpql.HermesParser.buildException(HermesParser.java:155)
+		at org.eclipse.persistence.internal.jpa.jpql.HermesParser.validate(HermesParser.java:347)
+		at org.eclipse.persistence.internal.jpa.jpql.HermesParser.populateQueryImp(HermesParser.java:278)
+		at org.eclipse.persistence.internal.jpa.jpql.HermesParser.buildQuery(HermesParser.java:163)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.buildEJBQLDatabaseQuery(EJBQueryImpl.java:142)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.buildEJBQLDatabaseQuery(EJBQueryImpl.java:116)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.<init>(EJBQueryImpl.java:102)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.<init>(EJBQueryImpl.java:86)
+		at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1614)
+		... 27 more
+30-May-2024 19:17:46.889 SEVERE [http-nio-8080-exec-48] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() para servlet [Articulos.DetalleProductoServlet] lanzó excepción
+	java.lang.IllegalArgumentException: An exception occurred while creating a query in EntityManager: 
+Exception Description: Problem compiling [SELECT DISTINCT at.idTalla.nombre FROM articulo_talla at WHERE at.idArticulo.id = :idProducto]. 
+[16, 33] The state field path 'at.idTalla.nombre' cannot be resolved to a valid type.
+[39, 53] The abstract schema type 'articulo_talla' is unknown.
+[63, 79] The state field path 'at.idArticulo.id' cannot be resolved to a valid type.
+		at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1616)
+		at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1636)
+		at DAO.ArticuloDAO.obtenerTallasDisponiblesPorID(ArticuloDAO.java:67)
+		at Articulos.DetalleProductoServlet.doGet(DetalleProductoServlet.java:25)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+	Caused by: Exception [EclipseLink-0] (Eclipse Persistence Services - 2.6.9.v20200130-0143b822bc): org.eclipse.persistence.exceptions.JPQLException
+Exception Description: Problem compiling [SELECT DISTINCT at.idTalla.nombre FROM articulo_talla at WHERE at.idArticulo.id = :idProducto]. 
+[16, 33] The state field path 'at.idTalla.nombre' cannot be resolved to a valid type.
+[39, 53] The abstract schema type 'articulo_talla' is unknown.
+[63, 79] The state field path 'at.idArticulo.id' cannot be resolved to a valid type.
+		at org.eclipse.persistence.internal.jpa.jpql.HermesParser.buildException(HermesParser.java:155)
+		at org.eclipse.persistence.internal.jpa.jpql.HermesParser.validate(HermesParser.java:347)
+		at org.eclipse.persistence.internal.jpa.jpql.HermesParser.populateQueryImp(HermesParser.java:278)
+		at org.eclipse.persistence.internal.jpa.jpql.HermesParser.buildQuery(HermesParser.java:163)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.buildEJBQLDatabaseQuery(EJBQueryImpl.java:142)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.buildEJBQLDatabaseQuery(EJBQueryImpl.java:116)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.<init>(EJBQueryImpl.java:102)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.<init>(EJBQueryImpl.java:86)
+		at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1614)
+		... 27 more
+30-May-2024 19:18:00.272 SEVERE [http-nio-8080-exec-47] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() para servlet [Articulos.DetalleProductoServlet] lanzó excepción
+	java.lang.IllegalArgumentException: An exception occurred while creating a query in EntityManager: 
+Exception Description: Problem compiling [SELECT DISTINCT atp.idtallaPie.nombre FROM ArticuloTallapie atp WHERE atp.idArticulo.id = :idProducto]. 
+[16, 37] The state field path 'atp.idtallaPie.nombre' cannot be resolved to a valid type.
+		at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1616)
+		at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1636)
+		at DAO.ArticuloDAO.obtenerTallasDisponiblesPorID(ArticuloDAO.java:74)
+		at Articulos.DetalleProductoServlet.doGet(DetalleProductoServlet.java:25)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+	Caused by: Exception [EclipseLink-0] (Eclipse Persistence Services - 2.6.9.v20200130-0143b822bc): org.eclipse.persistence.exceptions.JPQLException
+Exception Description: Problem compiling [SELECT DISTINCT atp.idtallaPie.nombre FROM ArticuloTallapie atp WHERE atp.idArticulo.id = :idProducto]. 
+[16, 37] The state field path 'atp.idtallaPie.nombre' cannot be resolved to a valid type.
+		at org.eclipse.persistence.internal.jpa.jpql.HermesParser.buildException(HermesParser.java:155)
+		at org.eclipse.persistence.internal.jpa.jpql.HermesParser.validate(HermesParser.java:347)
+		at org.eclipse.persistence.internal.jpa.jpql.HermesParser.populateQueryImp(HermesParser.java:278)
+		at org.eclipse.persistence.internal.jpa.jpql.HermesParser.buildQuery(HermesParser.java:163)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.buildEJBQLDatabaseQuery(EJBQueryImpl.java:142)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.buildEJBQLDatabaseQuery(EJBQueryImpl.java:116)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.<init>(EJBQueryImpl.java:102)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.<init>(EJBQueryImpl.java:86)
+		at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1614)
+		... 27 more
+30-May-2024 19:23:35.312 SEVERE [http-nio-8080-exec-73] org.apache.catalina.core.ApplicationDispatcher.invoke El Servlet.service() para servlet [jsp] lanzó una excepción
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [83] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Ha tenido lugar un error en la línea: [490] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Ha tenido lugar un error en la línea: [490] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "else Statement" to complete IfStatement
+
+Ha tenido lugar un error en la línea: [490] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Ha tenido lugar un error en la línea: [508] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error on token "}", delete this token
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:661)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:425)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:357)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:294)
+		at Articulos.DetalleProductoServlet.doGet(DetalleProductoServlet.java:30)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+30-May-2024 19:23:35.312 SEVERE [http-nio-8080-exec-73] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [Articulos.DetalleProductoServlet] en el contexto con ruta [/TiendaOnline] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [83] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Ha tenido lugar un error en la línea: [490] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Ha tenido lugar un error en la línea: [490] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "else Statement" to complete IfStatement
+
+Ha tenido lugar un error en la línea: [490] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Ha tenido lugar un error en la línea: [508] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error on token "}", delete this token
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [83] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Ha tenido lugar un error en la línea: [490] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Ha tenido lugar un error en la línea: [490] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "else Statement" to complete IfStatement
+
+Ha tenido lugar un error en la línea: [490] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Ha tenido lugar un error en la línea: [508] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error on token "}", delete this token
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:661)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:425)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:357)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:294)
+		at Articulos.DetalleProductoServlet.doGet(DetalleProductoServlet.java:30)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+30-May-2024 19:23:47.066 SEVERE [http-nio-8080-exec-70] org.apache.catalina.core.ApplicationDispatcher.invoke El Servlet.service() para servlet [jsp] lanzó una excepción
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [83] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Ha tenido lugar un error en la línea: [489] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Ha tenido lugar un error en la línea: [489] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "else Statement" to complete IfStatement
+
+Ha tenido lugar un error en la línea: [489] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Ha tenido lugar un error en la línea: [507] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error on token "}", delete this token
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:661)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:425)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:357)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:294)
+		at Articulos.DetalleProductoServlet.doGet(DetalleProductoServlet.java:30)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+30-May-2024 19:23:47.066 SEVERE [http-nio-8080-exec-70] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [Articulos.DetalleProductoServlet] en el contexto con ruta [/TiendaOnline] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [83] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Ha tenido lugar un error en la línea: [489] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Ha tenido lugar un error en la línea: [489] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "else Statement" to complete IfStatement
+
+Ha tenido lugar un error en la línea: [489] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Ha tenido lugar un error en la línea: [507] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error on token "}", delete this token
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [83] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Ha tenido lugar un error en la línea: [489] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Ha tenido lugar un error en la línea: [489] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "else Statement" to complete IfStatement
+
+Ha tenido lugar un error en la línea: [489] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Ha tenido lugar un error en la línea: [507] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error on token "}", delete this token
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:661)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:425)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:357)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:294)
+		at Articulos.DetalleProductoServlet.doGet(DetalleProductoServlet.java:30)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+30-May-2024 19:24:01.000 SEVERE [http-nio-8080-exec-76] org.apache.catalina.core.ApplicationDispatcher.invoke El Servlet.service() para servlet [jsp] lanzó una excepción
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [83] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Ha tenido lugar un error en la línea: [489] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Ha tenido lugar un error en la línea: [489] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "else Statement" to complete IfStatement
+
+Ha tenido lugar un error en la línea: [489] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Ha tenido lugar un error en la línea: [507] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error on token "}", delete this token
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:661)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:425)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:357)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:294)
+		at Articulos.DetalleProductoServlet.doGet(DetalleProductoServlet.java:30)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+30-May-2024 19:24:01.000 SEVERE [http-nio-8080-exec-76] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [Articulos.DetalleProductoServlet] en el contexto con ruta [/TiendaOnline] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [83] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Ha tenido lugar un error en la línea: [489] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Ha tenido lugar un error en la línea: [489] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "else Statement" to complete IfStatement
+
+Ha tenido lugar un error en la línea: [489] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Ha tenido lugar un error en la línea: [507] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error on token "}", delete this token
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [83] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Ha tenido lugar un error en la línea: [489] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Ha tenido lugar un error en la línea: [489] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "else Statement" to complete IfStatement
+
+Ha tenido lugar un error en la línea: [489] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Ha tenido lugar un error en la línea: [507] en el fichero java generado: [C:\Users\Danil\Desktop\TiendaOnline\TiendaOnline\apache-tomcat-9.0.80\work\Catalina\localhost\TiendaOnline\org\apache\jsp\DetalleProducto_jsp.java]
+Syntax error on token "}", delete this token
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:661)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:425)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:357)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:294)
+		at Articulos.DetalleProductoServlet.doGet(DetalleProductoServlet.java:30)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+30-May-2024 19:29:24.790 SEVERE [http-nio-8080-exec-86] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() para servlet [Articulos.DetalleProductoServlet] lanzó excepción
+	java.lang.RuntimeException: Uncompilable code - incompatible types: java.util.List<Tablas.Tallas> cannot be converted to java.util.List<java.lang.String>
+		at Articulos.DetalleProductoServlet.doGet(DetalleProductoServlet.java:1)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+30-May-2024 19:31:45.825 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-May-2024 19:31:45.825 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-May-2024 19:31:54.049 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-May-2024 19:31:54.049 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-May-2024 19:31:54.050 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@42611ed')
+30-May-2024 19:37:03.787 SEVERE [http-nio-8080-exec-15] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() para servlet [Articulos.DetalleProductoServlet] lanzó excepción
+	java.lang.IllegalArgumentException: An exception occurred while creating a query in EntityManager: 
+Exception Description: Problem compiling [SELECT at.idTalla FROM ArticuloTalla at WHERE at.id_articulo = :idProducto]. 
+[46, 60] The state field path 'at.id_articulo' cannot be resolved to a valid type.
+		at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1616)
+		at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1636)
+		at DAO.ArticuloDAO.obtenerTallasDisponiblesPorID(ArticuloDAO.java:70)
+		at Articulos.DetalleProductoServlet.doGet(DetalleProductoServlet.java:25)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+	Caused by: Exception [EclipseLink-0] (Eclipse Persistence Services - 2.6.9.v20200130-0143b822bc): org.eclipse.persistence.exceptions.JPQLException
+Exception Description: Problem compiling [SELECT at.idTalla FROM ArticuloTalla at WHERE at.id_articulo = :idProducto]. 
+[46, 60] The state field path 'at.id_articulo' cannot be resolved to a valid type.
+		at org.eclipse.persistence.internal.jpa.jpql.HermesParser.buildException(HermesParser.java:155)
+		at org.eclipse.persistence.internal.jpa.jpql.HermesParser.validate(HermesParser.java:347)
+		at org.eclipse.persistence.internal.jpa.jpql.HermesParser.populateQueryImp(HermesParser.java:278)
+		at org.eclipse.persistence.internal.jpa.jpql.HermesParser.buildQuery(HermesParser.java:163)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.buildEJBQLDatabaseQuery(EJBQueryImpl.java:142)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.buildEJBQLDatabaseQuery(EJBQueryImpl.java:116)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.<init>(EJBQueryImpl.java:102)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.<init>(EJBQueryImpl.java:86)
+		at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1614)
+		... 27 more
+30-May-2024 19:37:03.787 SEVERE [http-nio-8080-exec-19] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() para servlet [Articulos.DetalleProductoServlet] lanzó excepción
+	java.lang.IllegalArgumentException: An exception occurred while creating a query in EntityManager: 
+Exception Description: Problem compiling [SELECT at.idTalla FROM ArticuloTalla at WHERE at.id_articulo = :idProducto]. 
+[46, 60] The state field path 'at.id_articulo' cannot be resolved to a valid type.
+		at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1616)
+		at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1636)
+		at DAO.ArticuloDAO.obtenerTallasDisponiblesPorID(ArticuloDAO.java:70)
+		at Articulos.DetalleProductoServlet.doGet(DetalleProductoServlet.java:25)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+	Caused by: Exception [EclipseLink-0] (Eclipse Persistence Services - 2.6.9.v20200130-0143b822bc): org.eclipse.persistence.exceptions.JPQLException
+Exception Description: Problem compiling [SELECT at.idTalla FROM ArticuloTalla at WHERE at.id_articulo = :idProducto]. 
+[46, 60] The state field path 'at.id_articulo' cannot be resolved to a valid type.
+		at org.eclipse.persistence.internal.jpa.jpql.HermesParser.buildException(HermesParser.java:155)
+		at org.eclipse.persistence.internal.jpa.jpql.HermesParser.validate(HermesParser.java:347)
+		at org.eclipse.persistence.internal.jpa.jpql.HermesParser.populateQueryImp(HermesParser.java:278)
+		at org.eclipse.persistence.internal.jpa.jpql.HermesParser.buildQuery(HermesParser.java:163)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.buildEJBQLDatabaseQuery(EJBQueryImpl.java:142)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.buildEJBQLDatabaseQuery(EJBQueryImpl.java:116)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.<init>(EJBQueryImpl.java:102)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.<init>(EJBQueryImpl.java:86)
+		at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1614)
+		... 27 more
+30-May-2024 19:37:26.895 SEVERE [http-nio-8080-exec-21] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() para servlet [Articulos.DetalleProductoServlet] lanzó excepción
+	java.lang.IllegalArgumentException: An exception occurred while creating a query in EntityManager: 
+Exception Description: Problem compiling [SELECT at.idTalla FROM ArticuloTalla at WHERE at.id_articulo.id = :idProducto]. 
+[46, 63] The state field path 'at.id_articulo.id' cannot be resolved to a valid type.
+		at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1616)
+		at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1636)
+		at DAO.ArticuloDAO.obtenerTallasDisponiblesPorID(ArticuloDAO.java:70)
+		at Articulos.DetalleProductoServlet.doGet(DetalleProductoServlet.java:25)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+	Caused by: Exception [EclipseLink-0] (Eclipse Persistence Services - 2.6.9.v20200130-0143b822bc): org.eclipse.persistence.exceptions.JPQLException
+Exception Description: Problem compiling [SELECT at.idTalla FROM ArticuloTalla at WHERE at.id_articulo.id = :idProducto]. 
+[46, 63] The state field path 'at.id_articulo.id' cannot be resolved to a valid type.
+		at org.eclipse.persistence.internal.jpa.jpql.HermesParser.buildException(HermesParser.java:155)
+		at org.eclipse.persistence.internal.jpa.jpql.HermesParser.validate(HermesParser.java:347)
+		at org.eclipse.persistence.internal.jpa.jpql.HermesParser.populateQueryImp(HermesParser.java:278)
+		at org.eclipse.persistence.internal.jpa.jpql.HermesParser.buildQuery(HermesParser.java:163)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.buildEJBQLDatabaseQuery(EJBQueryImpl.java:142)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.buildEJBQLDatabaseQuery(EJBQueryImpl.java:116)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.<init>(EJBQueryImpl.java:102)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.<init>(EJBQueryImpl.java:86)
+		at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1614)
+		... 27 more
+30-May-2024 19:38:04.729 SEVERE [http-nio-8080-exec-22] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() para servlet [Articulos.DetalleProductoServlet] lanzó excepción
+	java.lang.IllegalArgumentException: You have attempted to set a value of type class java.lang.Integer for parameter idProducto with expected type of class Tablas.Articulos from query string SELECT at.idTalla FROM ArticuloTalla at WHERE at.idArticulo = :idProducto.
+		at org.eclipse.persistence.internal.jpa.QueryImpl.setParameterInternal(QueryImpl.java:942)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.setParameter(EJBQueryImpl.java:593)
+		at DAO.ArticuloDAO.obtenerTallasDisponiblesPorID(ArticuloDAO.java:73)
+		at Articulos.DetalleProductoServlet.doGet(DetalleProductoServlet.java:25)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+30-May-2024 19:40:02.183 SEVERE [http-nio-8080-exec-32] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() para servlet [Articulos.DetalleProductoServlet] lanzó excepción
+	java.lang.IllegalArgumentException: You have attempted to set a parameter value using a name of idProducto that does not exist in the query string SELECT at.idTalla FROM ArticuloTalla at WHERE at.idArticulo = :articulo.
+		at org.eclipse.persistence.internal.jpa.QueryImpl.setParameterInternal(QueryImpl.java:937)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.setParameter(EJBQueryImpl.java:593)
+		at DAO.ArticuloDAO.obtenerTallasDisponiblesPorID(ArticuloDAO.java:75)
+		at Articulos.DetalleProductoServlet.doGet(DetalleProductoServlet.java:25)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+30-May-2024 19:41:24.836 SEVERE [http-nio-8080-exec-41] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() para servlet [Articulos.DetalleProductoServlet] lanzó excepción
+	java.lang.IllegalArgumentException: You have attempted to set a value of type class java.lang.Integer for parameter articulo with expected type of class Tablas.Articulos from query string SELECT at.idTalla FROM ArticuloTalla at WHERE at.idArticulo = :articulo.
+		at org.eclipse.persistence.internal.jpa.QueryImpl.setParameterInternal(QueryImpl.java:942)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.setParameter(EJBQueryImpl.java:593)
+		at DAO.ArticuloDAO.obtenerTallasDisponiblesPorID(ArticuloDAO.java:74)
+		at Articulos.DetalleProductoServlet.doGet(DetalleProductoServlet.java:25)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+30-May-2024 19:42:07.726 SEVERE [http-nio-8080-exec-27] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() para servlet [Articulos.DetalleProductoServlet] lanzó excepción
+	java.lang.IllegalArgumentException: You have attempted to set a value of type class java.lang.Integer for parameter articulo with expected type of class Tablas.Articulos from query string SELECT at.idTalla FROM ArticuloTalla at WHERE at.idArticulo = :articulo.
+		at org.eclipse.persistence.internal.jpa.QueryImpl.setParameterInternal(QueryImpl.java:942)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.setParameter(EJBQueryImpl.java:593)
+		at DAO.ArticuloDAO.obtenerTallasDisponiblesPorID(ArticuloDAO.java:74)
+		at Articulos.DetalleProductoServlet.doGet(DetalleProductoServlet.java:25)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+30-May-2024 19:51:39.596 SEVERE [http-nio-8080-exec-84] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/TiendaOnline] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/Tienda.jsp] en línea [217]
+
+214:                             <div class="row">
+215:                                 <%
+216:                                     List<Articulos> listaDeArticulos = (List<Articulos>) request.getAttribute("listaDeArticulos");
+217:                                     for (int i = 0; i < listaDeArticulos.size(); i++) {
+218:                                         Articulos articulo = listaDeArticulos.get(i);
+219:                                         if (i % 3 == 0) {
+220:                                 %>
+
+
+Stacktrace:] con causa raíz
+	java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "listaDeArticulos" is null
+		at org.apache.jsp.Tienda_jsp._jspService(Tienda_jsp.java:343)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+30-May-2024 19:51:41.908 SEVERE [http-nio-8080-exec-87] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/TiendaOnline] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/Tienda.jsp] en línea [217]
+
+214:                             <div class="row">
+215:                                 <%
+216:                                     List<Articulos> listaDeArticulos = (List<Articulos>) request.getAttribute("listaDeArticulos");
+217:                                     for (int i = 0; i < listaDeArticulos.size(); i++) {
+218:                                         Articulos articulo = listaDeArticulos.get(i);
+219:                                         if (i % 3 == 0) {
+220:                                 %>
+
+
+Stacktrace:] con causa raíz
+	java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "listaDeArticulos" is null
+		at org.apache.jsp.Tienda_jsp._jspService(Tienda_jsp.java:343)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+30-May-2024 19:51:42.985 SEVERE [http-nio-8080-exec-78] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/TiendaOnline] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/Tienda.jsp] en línea [217]
+
+214:                             <div class="row">
+215:                                 <%
+216:                                     List<Articulos> listaDeArticulos = (List<Articulos>) request.getAttribute("listaDeArticulos");
+217:                                     for (int i = 0; i < listaDeArticulos.size(); i++) {
+218:                                         Articulos articulo = listaDeArticulos.get(i);
+219:                                         if (i % 3 == 0) {
+220:                                 %>
+
+
+Stacktrace:] con causa raíz
+	java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "listaDeArticulos" is null
+		at org.apache.jsp.Tienda_jsp._jspService(Tienda_jsp.java:343)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+30-May-2024 19:51:57.514 SEVERE [http-nio-8080-exec-92] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() para servlet [Articulos.DetalleProductoServlet] lanzó excepción
+	java.lang.IllegalArgumentException: You have attempted to set a value of type class java.lang.Integer for parameter articulo with expected type of class Tablas.Articulos from query string SELECT at.idTalla FROM ArticuloTalla at WHERE at.idArticulo = :articulo.
+		at org.eclipse.persistence.internal.jpa.QueryImpl.setParameterInternal(QueryImpl.java:942)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.setParameter(EJBQueryImpl.java:593)
+		at DAO.ArticuloDAO.obtenerTallasDisponiblesPorID(ArticuloDAO.java:73)
+		at Articulos.DetalleProductoServlet.doGet(DetalleProductoServlet.java:25)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+30-May-2024 19:55:06.835 SEVERE [http-nio-8080-exec-98] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() para servlet [Articulos.DetalleProductoServlet] lanzó excepción
+	java.lang.IllegalArgumentException: You have attempted to set a value of type class java.lang.Integer for parameter idProducto with expected type of class Tablas.Articulos from query string SELECT at.idTalla FROM ArticuloTalla at WHERE at.idArticulo = :idProducto.
+		at org.eclipse.persistence.internal.jpa.QueryImpl.setParameterInternal(QueryImpl.java:942)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.setParameter(EJBQueryImpl.java:593)
+		at DAO.ArticuloDAO.obtenerTallasDisponiblesPorID(ArticuloDAO.java:73)
+		at Articulos.DetalleProductoServlet.doGet(DetalleProductoServlet.java:25)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+30-May-2024 19:55:22.844 SEVERE [http-nio-8080-exec-99] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() para servlet [Articulos.DetalleProductoServlet] lanzó excepción
+	java.lang.IllegalArgumentException: You have attempted to set a value of type class java.lang.Integer for parameter idProducto with expected type of class Tablas.Articulos from query string SELECT at.idTalla FROM ArticuloTalla at WHERE at.idArticulo = :idProducto.
+		at org.eclipse.persistence.internal.jpa.QueryImpl.setParameterInternal(QueryImpl.java:942)
+		at org.eclipse.persistence.internal.jpa.EJBQueryImpl.setParameter(EJBQueryImpl.java:593)
+		at DAO.ArticuloDAO.obtenerTallasDisponiblesPorID(ArticuloDAO.java:72)
+		at Articulos.DetalleProductoServlet.doGet(DetalleProductoServlet.java:25)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+30-May-2024 20:43:05.077 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-May-2024 20:43:05.077 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()

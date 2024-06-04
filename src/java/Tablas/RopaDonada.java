@@ -5,7 +5,6 @@
 package Tablas;
 
 import java.io.Serializable;
-import java.util.Date;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -17,9 +16,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
@@ -33,7 +30,10 @@ import javax.xml.bind.annotation.XmlRootElement;
     @NamedQuery(name = "RopaDonada.findAll", query = "SELECT r FROM RopaDonada r"),
     @NamedQuery(name = "RopaDonada.findById", query = "SELECT r FROM RopaDonada r WHERE r.id = :id"),
     @NamedQuery(name = "RopaDonada.findByCantidad", query = "SELECT r FROM RopaDonada r WHERE r.cantidad = :cantidad"),
-    @NamedQuery(name = "RopaDonada.findByFechaDonacion", query = "SELECT r FROM RopaDonada r WHERE r.fechaDonacion = :fechaDonacion")})
+    @NamedQuery(name = "RopaDonada.findByNombre", query = "SELECT r FROM RopaDonada r WHERE r.nombre = :nombre"),
+    @NamedQuery(name = "RopaDonada.findByTalla", query = "SELECT r FROM RopaDonada r WHERE r.talla = :talla"),
+    @NamedQuery(name = "RopaDonada.findByCatalogo", query = "SELECT r FROM RopaDonada r WHERE r.catalogo = :catalogo"),
+    @NamedQuery(name = "RopaDonada.findByImagen", query = "SELECT r FROM RopaDonada r WHERE r.imagen = :imagen")})
 public class RopaDonada implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -44,11 +44,18 @@ public class RopaDonada implements Serializable {
     private Integer id;
     @Column(name = "cantidad")
     private Integer cantidad;
-    @Basic(optional = false)
-    @NotNull
-    @Column(name = "fecha_donacion")
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date fechaDonacion;
+    @Size(max = 255)
+    @Column(name = "nombre")
+    private String nombre;
+    @Size(max = 255)
+    @Column(name = "talla")
+    private String talla;
+    @Size(max = 255)
+    @Column(name = "catalogo")
+    private String catalogo;
+    @Size(max = 255)
+    @Column(name = "imagen")
+    private String imagen;
     @JoinColumn(name = "usuario_id", referencedColumnName = "id")
     @ManyToOne
     private Usuarios usuarioId;
@@ -58,11 +65,6 @@ public class RopaDonada implements Serializable {
 
     public RopaDonada(Integer id) {
         this.id = id;
-    }
-
-    public RopaDonada(Integer id, Date fechaDonacion) {
-        this.id = id;
-        this.fechaDonacion = fechaDonacion;
     }
 
     public Integer getId() {
@@ -81,12 +83,36 @@ public class RopaDonada implements Serializable {
         this.cantidad = cantidad;
     }
 
-    public Date getFechaDonacion() {
-        return fechaDonacion;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setFechaDonacion(Date fechaDonacion) {
-        this.fechaDonacion = fechaDonacion;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getTalla() {
+        return talla;
+    }
+
+    public void setTalla(String talla) {
+        this.talla = talla;
+    }
+
+    public String getCatalogo() {
+        return catalogo;
+    }
+
+    public void setCatalogo(String catalogo) {
+        this.catalogo = catalogo;
+    }
+
+    public String getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
     }
 
     public Usuarios getUsuarioId() {

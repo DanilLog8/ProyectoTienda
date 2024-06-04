@@ -1,3 +1,4 @@
+<%@page import="java.math.BigDecimal"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="es">
@@ -56,17 +57,21 @@
                 <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex  flex-direct flex-row" id="templatemo_main_nav">
                     <div class="flex-fill">
                         <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto marg-1">
+                            <% if (session.getAttribute("usuario") != null && !session.getAttribute("usuario").equals("Trabajador1")) { %>
+                            <a class="nav-link" href="Home2.jsp">Home</a>
+                            <% } else if (session.getAttribute("usuario").equals("Trabajador1")) { %>
+                            <a class="nav-link" href="Home2Trabajador.jsp">Home</a>
+                            <% } else if (session.getAttribute("usuario") == null) {%>
+                            <a class="nav-link" href="Home.jsp">Home</a>
+                            <%}%>
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
+                                <a class="nav-link" href="SobreNosotros.jsp">Sobre Nosotros</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="about.html">Sobre Nosotros</a>
+                                <a class="nav-link" href="MostrarArticulo">Tienda</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="shop.html">Tienda</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contacto</a>
+                                <a class="nav-link" href="">Contacto</a>
                             </li>
                         </ul>
                     </div>
@@ -91,12 +96,14 @@
                         <div class="navbar align-self-center d-flex">
                             <div class="dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                                    <%= session.getAttribute("usuario")%>
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <li><a class="dropdown-item" href="modificarDatos.jsp">Modificar Datos</a></li>
-                                    <li><a class="dropdown-item" href="#">Hucha</a></li>
-                                    <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+                                    <li><a class="dropdown-item" href="modificarDatos">Modificar Datos</a></li>
+                                    <li><a class="dropdown-item" href="donarRopa">Donar Ropa</a></li>
+                                        <% BigDecimal huchaUsuario = (BigDecimal) request.getAttribute("saldoHucha");%>
+                                    <li style="margin-left:15px;"><%= huchaUsuario != null ? huchaUsuario + "€" : "0.00€"%></li>
+                                    <li><a class="dropdown-item" href="cerrarSesion">Cerrar Sesión</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -209,113 +216,26 @@
             </div>
             <div class="row">
                 <div class="col-12 col-md-4 p-5 mt-3">
-                    <a href="#"><img src="./assets/img/category_img_01.jpg" class="rounded-circle img-fluid border"></a>
-                    <h5 class="text-center mt-3 mb-3">Relojes</h5>
-                    <p class="text-center"><a href="shop.html" class="btn btn-success">Comprar</a></p>
+                    <a href="MostrarArticulo?categoria=4"><img src="./assets/img/category_img_01.jpg" class="rounded-circle img-fluid border"></a>
+                    <h5 class="text-center mt-3 mb-3">Accesorios</h5>
+                    <p class="text-center"><a href="MostrarArticulo?categoria=4" class="btn btn-success">Comprar</a></p>
                 </div>
                 <div class="col-12 col-md-4 p-5 mt-3">
-                    <a href="#"><img src="./assets/img/category_img_02.jpg" class="rounded-circle img-fluid border"></a>
-                    <h2 class="h5 text-center mt-3 mb-3">Zapatos</h2>
-                    <p class="text-center"><a href="shop.html" class="btn btn-success">Comprar</a></p>
+                    <a href="MostrarArticulo?categoria=3"><img src="./assets/img/category_img_02.jpg" class="rounded-circle img-fluid border"></a>
+                    <h2 class="h5 text-center mt-3 mb-3">Calzado</h2>
+                    <p class="text-center"><a href="MostrarArticulo?categoria=3" class="btn btn-success">Comprar</a></p>
                 </div>
                 <div class="col-12 col-md-4 p-5 mt-3">
-                    <a href="#"><img src="./assets/img/category_img_03.jpg" class="rounded-circle img-fluid border"></a>
-                    <h2 class="h5 text-center mt-3 mb-3">Accesorios</h2>
-                    <p class="text-center"><a href="shop.html" class="btn btn-success">Comprar</a></p>
+                    <a href="MostrarArticulo?categoria=1"><img src="./assets/img/category_img_03.jpg" class="rounded-circle img-fluid border"></a>
+                    <h2 class="h5 text-center mt-3 mb-3">Ropa de Mujer</h2>
+                    <p class="text-center"><a href="MostrarArticulo?categoria=1" class="btn btn-success">Comprar</a></p>
                 </div>
             </div>
         </section>
         <!-- End Categorias -->
 
 
-        <!-- Start Destacados -->
-        <section class="bg-light">
-            <div class="container py-5">
-                <div class="row text-center py-3">
-                    <div class="col-lg-6 m-auto">
-                        <h1 class="h1">Producots destacados</h1>
-                        <p>
-                            Estos son los productos con mas ventas este mes.
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-4 mb-4">
-                        <div class="card h-100">
-                            <a href="shop-single.html">
-                                <img src="./assets/img/feature_prod_01.jpg" class="card-img-top" alt="...">
-                            </a>
-                            <div class="card-body">
-                                <ul class="list-unstyled d-flex justify-content-between">
-                                    <li>
-                                        <i class="text-warning fa fa-star"></i>
-                                        <i class="text-warning fa fa-star"></i>
-                                        <i class="text-warning fa fa-star"></i>
-                                        <i class="text-warning fa fa-star"></i>
-                                        <i class="text-warning fa fa-star"></i>
-                                    </li>
-                                    <li class="text-muted text-right">240.00€</li>
-                                </ul>
-                                <a href="shop-single.html" class="h2 text-decoration-none text-dark">Linterna portatil 1000KW</a>
-                                <p class="card-text">
-                                    La mejor linterna para iluminar tus noches mas oscuras.
-                                </p>
-                                <p class="text-muted">Reviews (24)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4 mb-4">
-                        <div class="card h-100">
-                            <a href="shop-single.html">
-                                <img src="./assets/img/feature_prod_02.jpg" class="card-img-top" alt="...">
-                            </a>
-                            <div class="card-body">
-                                <ul class="list-unstyled d-flex justify-content-between">
-                                    <li>
-                                        <i class="text-warning fa fa-star"></i>
-                                        <i class="text-warning fa fa-star"></i>
-                                        <i class="text-warning fa fa-star"></i>
-                                        <i class="text-warning fa fa-star"></i>
-                                        <i class="text-warning fa fa-star"></i>
-                                    </li>
-                                    <li class="text-muted text-right">1480.00€</li>
-                                </ul>
-                                <a href="shop-single.html" class="h2 text-decoration-none text-dark">Reloj Balenciaga</a>
-                                <p class="card-text">
-                                    El reloj que no t dejara indeferente.
-                                </p>
-                                <p class="text-muted">Reviews (48)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4 mb-4">
-                        <div class="card h-100">
-                            <a href="shop-single.html">
-                                <img src="./assets/img/feature_prod_03.jpg" class="card-img-top" alt="...">
-                            </a>
-                            <div class="card-body">
-                                <ul class="list-unstyled d-flex justify-content-between">
-                                    <li>
-                                        <i class="text-warning fa fa-star"></i>
-                                        <i class="text-warning fa fa-star"></i>
-                                        <i class="text-warning fa fa-star"></i>
-                                        <i class="text-warning fa fa-star"></i>
-                                        <i class="text-warning fa fa-star"></i>
-                                    </li>
-                                    <li class="text-muted text-right">460.00€</li>
-                                </ul>
-                                <a href="shop-single.html" class="h2 text-decoration-none text-dark">Cámara instantánea Polaroid Now+</a>
-                                <p class="card-text">
-                                    Nuestra cámara más creativa hasta la fecha. Polaroid Now+ es nuestra renovada cámara instantánea analógica con más herramientas creativas.
-                                </p>
-                                <p class="text-muted">Reviews (74)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Destacados -->
+
 
 
         <!-- Start Footer -->

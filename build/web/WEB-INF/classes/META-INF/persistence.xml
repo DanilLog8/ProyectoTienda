@@ -9,6 +9,11 @@
     <class>Tablas.Articulos</class>
     <class>Tablas.Catalogos</class>
     <class>Tablas.CodigosDescuento</class>
+    <class>Tablas.Tallas</class>
+    <class>Tablas.ArticuloTalla</class>
+    <class>Tablas.ArticuloTallapie</class>
+    <class>Tablas.Tallaspie</class>
+    <class>Tablas.Tarjetas</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/tienda_online?zeroDateTimeBehavior=CONVERT_TO_NULL"/>

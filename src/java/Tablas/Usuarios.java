@@ -1,12 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package Tablas;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Collection;
+import java.util.Date;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -17,6 +15,8 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
@@ -37,8 +37,15 @@ import javax.xml.bind.annotation.XmlTransient;
     @NamedQuery(name = "Usuarios.findByTipoUsuario", query = "SELECT u FROM Usuarios u WHERE u.tipoUsuario = :tipoUsuario"),
     @NamedQuery(name = "Usuarios.findByHucha", query = "SELECT u FROM Usuarios u WHERE u.hucha = :hucha"),
     @NamedQuery(name = "Usuarios.findByTelefono", query = "SELECT u FROM Usuarios u WHERE u.telefono = :telefono"),
-    @NamedQuery(name = "Usuarios.findByDireccion", query = "SELECT u FROM Usuarios u WHERE u.direccion = :direccion")})
+    @NamedQuery(name = "Usuarios.findByDireccion", query = "SELECT u FROM Usuarios u WHERE u.direccion = :direccion"),
+    @NamedQuery(name = "Usuarios.findByFechaNacimiento", query = "SELECT u FROM Usuarios u WHERE u.fechaNacimiento = :fechaNacimiento")})
 public class Usuarios implements Serializable {
+
+    @OneToMany(mappedBy = "usuarioId")
+    private Collection<Carrito> carritoCollection;
+
+    @OneToMany(mappedBy = "usuarioId")
+    private Collection<RopaDonada> ropaDonadaCollection;
 
     private static final long serialVersionUID = 1L;
     @Id
@@ -68,12 +75,9 @@ public class Usuarios implements Serializable {
     @Size(max = 255)
     @Column(name = "direccion")
     private String direccion;
-    @OneToMany(mappedBy = "usuarioId")
-    private Collection<RopaDonada> ropaDonadaCollection;
-    @OneToMany(mappedBy = "usuarioId")
-    private Collection<Pedidos> pedidosCollection;
-    @OneToMany(mappedBy = "usuarioId")
-    private Collection<Carrito> carritoCollection;
+    @Column(name = "fecha_nacimiento")
+    @Temporal(TemporalType.DATE)
+    private Date fechaNacimiento;
 
     public Usuarios() {
     }
@@ -146,31 +150,12 @@ public class Usuarios implements Serializable {
         this.direccion = direccion;
     }
 
-    @XmlTransient
-    public Collection<RopaDonada> getRopaDonadaCollection() {
-        return ropaDonadaCollection;
+    public Date getFechaNacimiento() {
+        return fechaNacimiento;
     }
 
-    public void setRopaDonadaCollection(Collection<RopaDonada> ropaDonadaCollection) {
-        this.ropaDonadaCollection = ropaDonadaCollection;
-    }
-
-    @XmlTransient
-    public Collection<Pedidos> getPedidosCollection() {
-        return pedidosCollection;
-    }
-
-    public void setPedidosCollection(Collection<Pedidos> pedidosCollection) {
-        this.pedidosCollection = pedidosCollection;
-    }
-
-    @XmlTransient
-    public Collection<Carrito> getCarritoCollection() {
-        return carritoCollection;
-    }
-
-    public void setCarritoCollection(Collection<Carrito> carritoCollection) {
-        this.carritoCollection = carritoCollection;
+    public void setFechaNacimiento(Date fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
     }
 
     @Override
@@ -196,6 +181,24 @@ public class Usuarios implements Serializable {
     @Override
     public String toString() {
         return "Tablas.Usuarios[ id=" + id + " ]";
+    }
+
+    @XmlTransient
+    public Collection<RopaDonada> getRopaDonadaCollection() {
+        return ropaDonadaCollection;
+    }
+
+    public void setRopaDonadaCollection(Collection<RopaDonada> ropaDonadaCollection) {
+        this.ropaDonadaCollection = ropaDonadaCollection;
+    }
+
+    @XmlTransient
+    public Collection<Carrito> getCarritoCollection() {
+        return carritoCollection;
+    }
+
+    public void setCarritoCollection(Collection<Carrito> carritoCollection) {
+        this.carritoCollection = carritoCollection;
     }
     
 }

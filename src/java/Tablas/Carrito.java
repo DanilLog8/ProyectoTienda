@@ -16,6 +16,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
@@ -28,7 +30,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 @NamedQueries({
     @NamedQuery(name = "Carrito.findAll", query = "SELECT c FROM Carrito c"),
     @NamedQuery(name = "Carrito.findById", query = "SELECT c FROM Carrito c WHERE c.id = :id"),
-    @NamedQuery(name = "Carrito.findByCantidad", query = "SELECT c FROM Carrito c WHERE c.cantidad = :cantidad")})
+    @NamedQuery(name = "Carrito.findByTalla", query = "SELECT c FROM Carrito c WHERE c.talla = :talla"),
+    @NamedQuery(name = "Carrito.findByPrecio", query = "SELECT c FROM Carrito c WHERE c.precio = :precio")})
 public class Carrito implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -37,8 +40,13 @@ public class Carrito implements Serializable {
     @Basic(optional = false)
     @Column(name = "id")
     private Integer id;
-    @Column(name = "cantidad")
-    private Integer cantidad;
+    @Size(max = 255)
+    @Column(name = "talla")
+    private String talla;
+    @Basic(optional = false)
+    @NotNull
+    @Column(name = "precio")
+    private int precio;
     @JoinColumn(name = "usuario_id", referencedColumnName = "id")
     @ManyToOne
     private Usuarios usuarioId;
@@ -53,6 +61,11 @@ public class Carrito implements Serializable {
         this.id = id;
     }
 
+    public Carrito(Integer id, int precio) {
+        this.id = id;
+        this.precio = precio;
+    }
+
     public Integer getId() {
         return id;
     }
@@ -61,12 +74,20 @@ public class Carrito implements Serializable {
         this.id = id;
     }
 
-    public Integer getCantidad() {
-        return cantidad;
+    public String getTalla() {
+        return talla;
     }
 
-    public void setCantidad(Integer cantidad) {
-        this.cantidad = cantidad;
+    public void setTalla(String talla) {
+        this.talla = talla;
+    }
+
+    public int getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(int precio) {
+        this.precio = precio;
     }
 
     public Usuarios getUsuarioId() {

@@ -1,13 +1,10 @@
 package DAO;
 
 import Tablas.Usuarios;
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-import javax.persistence.Query;
+import java.math.BigDecimal;
+import javax.persistence.*;
+import java.util.Date;
 import java.util.List;
-import javax.persistence.NoResultException;
-import javax.persistence.TypedQuery;
 
 public class UsuarioDAO {
 
@@ -17,7 +14,13 @@ public class UsuarioDAO {
         emf = Persistence.createEntityManagerFactory("tiendaOnline");
     }
 
-    public boolean registrarUsuario(String usuario, String correo, String contrasena, String telefono, String direccion, String tipoUsuario) {
+    public void close() {
+        if (emf != null && emf.isOpen()) {
+            emf.close();
+        }
+    }
+
+    public boolean registrarUsuario(String usuario, String correo, String contrasena, String telefono, String direccion, String tipoUsuario, Date fechaNacimiento) {
         EntityManager entityManager = emf.createEntityManager();
         try {
             entityManager.getTransaction().begin();
@@ -28,17 +31,18 @@ public class UsuarioDAO {
             user.setContrasena(contrasena);
             user.setTelefono(telefono);
             user.setDireccion(direccion);
-            user.setTipoUsuario(tipoUsuario); // Establecer el tipo de usuario
+            user.setTipoUsuario(tipoUsuario);
+            user.setFechaNacimiento(fechaNacimiento);
 
             entityManager.persist(user);
 
             entityManager.getTransaction().commit();
             return true;
-        } catch (Exception ex) {
+        } catch (PersistenceException pe) {
             if (entityManager.getTransaction().isActive()) {
                 entityManager.getTransaction().rollback();
             }
-            ex.printStackTrace();
+            pe.printStackTrace();
             return false;
         } finally {
             entityManager.close();
@@ -52,14 +56,16 @@ public class UsuarioDAO {
             query.setParameter("nombre", usuario);
             Long count = (Long) query.getSingleResult();
             return count > 0;
-        } catch (Exception ex) {
-            ex.printStackTrace();
+        } catch (NoResultException nre) {
+            return false;
+        } catch (PersistenceException pe) {
+            pe.printStackTrace();
             return false;
         } finally {
             entityManager.close();
         }
     }
-    
+
     public boolean verificarUsuario(String usuario, String contrasena) {
         EntityManager entityManager = emf.createEntityManager();
         try {
@@ -68,50 +74,125 @@ public class UsuarioDAO {
             query.setParameter("contrasena", contrasena);
             Long count = (Long) query.getSingleResult();
             return count > 0;
-        } catch (Exception ex) {
-            ex.printStackTrace();
+        } catch (NoResultException nre) {
+            return false;
+        } catch (PersistenceException pe) {
+            pe.printStackTrace();
             return false;
         } finally {
             entityManager.close();
         }
     }
-    
-    public Usuarios obtenerUsuario(String nombreUsuario) {
-    EntityManager em = emf.createEntityManager();
 
+    public Usuarios obtenerUsuario(String nombreUsuario) {
+        EntityManager em = emf.createEntityManager();
         try {
             TypedQuery<Usuarios> query = em.createQuery("SELECT u FROM Usuarios u WHERE u.nombre = :nombreUsuario", Usuarios.class);
             query.setParameter("nombreUsuario", nombreUsuario);
-
             return query.getSingleResult();
+        } catch (NoResultException nre) {
+            return null;
         } finally {
             if (em != null && em.isOpen()) {
                 em.close();
             }
         }
-}
+    }
 
-    public boolean actualizarDatosUsuario(String usuario, String correo, String telefono, String direccion) {
+    public void actualizarDatosUsuario(Usuarios usuario) {
+        EntityManager em = emf.createEntityManager();
+        try {
+            em.getTransaction().begin();
+            em.merge(usuario);
+            em.getTransaction().commit();
+        } catch (PersistenceException pe) {
+            if (em.getTransaction().isActive()) {
+                em.getTransaction().rollback();
+            }
+            pe.printStackTrace();
+        } finally {
+            if (em != null && em.isOpen()) {
+                em.close();
+            }
+        }
+    }
+
+    public List<Usuarios> obtenerUsuarios() {
+        EntityManager entityManager = emf.createEntityManager();
+        List<Usuarios> usuarios = null;
+        try {
+            String jpql = "SELECT u FROM Usuarios u WHERE u.tipoUsuario = 'usuario'";
+            TypedQuery<Usuarios> query = entityManager.createQuery(jpql, Usuarios.class);
+            usuarios = query.getResultList();
+        } finally {
+            entityManager.close();
+        }
+        return usuarios;
+    }
+
+    public void eliminarUsuario(int usuarioId) {
         EntityManager entityManager = emf.createEntityManager();
         try {
             entityManager.getTransaction().begin();
-            Usuarios user = entityManager.find(Usuarios.class, usuario);
-            if (user != null) {
-                user.setEmail(correo);
-                user.setTelefono(telefono);
-                user.setDireccion(direccion);
-                entityManager.getTransaction().commit();
-                return true;
+            Usuarios usuario = entityManager.find(Usuarios.class, usuarioId);
+            if (usuario != null) {
+                entityManager.remove(usuario);
             }
-            return false;
-        } catch (Exception ex) {
-            if (entityManager.getTransaction().isActive()) {
-                entityManager.getTransaction().rollback();
-            }
-            ex.printStackTrace();
-            return false;
+            entityManager.getTransaction().commit();
         } finally {
             entityManager.close();
         }
     }
+
+    public Usuarios obtenerUsuarioPorId(int usuarioId) {
+        EntityManager entityManager = emf.createEntityManager();
+        Usuarios usuario = null;
+        try {
+            usuario = entityManager.find(Usuarios.class, usuarioId);
+        } finally {
+            entityManager.close();
+        }
+        return usuario;
+    }
+
+    public BigDecimal obtenerSaldoHucha(String nombreUsuario) {
+        EntityManager em = emf.createEntityManager();
+        try {
+            TypedQuery<BigDecimal> query = em.createQuery(
+                    "SELECT u.hucha FROM Usuarios u WHERE u.nombre = :nombreUsuario", BigDecimal.class);
+            query.setParameter("nombreUsuario", nombreUsuario);
+            return query.getSingleResult();
+        } catch (NoResultException nre) {
+            return BigDecimal.ZERO;
+        } finally {
+            if (em != null && em.isOpen()) {
+                em.close();
+            }
+        }
+    }
+
+    public void actualizarSaldoHucha(String nombreUsuario, BigDecimal nuevoSaldo) {
+        EntityManager em = emf.createEntityManager();
+        try {
+            em.getTransaction().begin();
+            TypedQuery<Usuarios> query = em.createQuery("SELECT u FROM Usuarios u WHERE u.nombre = :nombreUsuario", Usuarios.class);
+            query.setParameter("nombreUsuario", nombreUsuario);
+            Usuarios usuario = query.getSingleResult();
+            if (usuario != null) {
+                usuario.setHucha(nuevoSaldo);
+                em.merge(usuario);
+                em.getTransaction().commit();
+            }
+        } catch (PersistenceException pe) {
+            if (em.getTransaction().isActive()) {
+                em.getTransaction().rollback();
+            }
+            pe.printStackTrace();
+        } finally {
+            if (em != null && em.isOpen()) {
+                em.close();
+            }
+        }
+    }
+
 }

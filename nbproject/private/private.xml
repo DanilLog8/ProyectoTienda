@@ -3,11 +3,44 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Danil/Downloads/TiendaOnline/TiendaOnline/src/java/DAO/UsuarioDAO.java</file>
-            <file>file:/C:/Users/Danil/Downloads/TiendaOnline/TiendaOnline/src/java/LoginServlet.java</file>
-            <file>file:/C:/Users/Danil/Downloads/TiendaOnline/TiendaOnline/src/java/ModificarDatosServlet.java</file>
-            <file>file:/C:/Users/Danil/Downloads/TiendaOnline/TiendaOnline/web/modificarDatos.jsp</file>
-            <file>file:/C:/Users/Danil/Downloads/TiendaOnline/TiendaOnline/src/java/Tablas/Usuarios.java</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/src/java/Tablas/ArticuloTallapie.java</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/src/java/DAO/ArticuloTallapieDAO.java</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/src/java/Usuario/ModificarUsuarioServlet.java</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/web/modificarUsuario.jsp</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/src/java/Usuario/ActualizarUsuarioServlet.java</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/src/java/Usuario/EliminarUsuarioServlet.java</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/src/java/Tablas/Usuarios.java</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/src/java/Usuario/MostrarUsuariosServlet.java</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/web/modificarDatos.jsp</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/src/java/DAO/ArticuloTallaDAO.java</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/src/java/DAO/TallasPieDAO.java</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/src/java/Usuario/LoginServlet.java</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/web/assets/css/bootstrap.min.css</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/src/java/Tablas/Tallas.java</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/src/java/Articulos/DetalleProductoServlet.java</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/web/Tienda.jsp</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/src/java/Tablas/Tallaspie.java</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/src/java/DAO/TarjetasDAO.java</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/web/Home2Trabajador.jsp</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/src/java/Articulos/AgregarArticuloServlet.java</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/src/java/Articulos/ComprarArticuloServlet.java</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/src/java/Tablas/ArticuloTalla.java</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/src/java/Articulos/MostrarArticulosServlet.java</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/web/ComprarArticulo.jsp</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/web/Home2.jsp</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/src/java/Usuario/ComprarServlet.java</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/web/DetalleProducto.jsp</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/src/java/Tablas/Articulos.java</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/web/Home.jsp</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/web/AnadirArticulos.jsp</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/src/java/DAO/TallasDAO.java</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/src/java/DAO/ArticuloDAO.java</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/web/mostrarUsuarios.jsp</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/src/java/DAO/CatalogosDAO.java</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/web/response.jsp</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/src/java/DAO/UsuarioDAO.java</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/src/java/Tablas/RopaDonada.java</file>
+            <file>file:/C:/Users/Danil/Desktop/TiendaOnline/TiendaOnline/src/java/Tablas/Tarjetas.java</file>
         </group>
     </open-files>
 </project-private>

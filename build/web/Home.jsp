@@ -15,9 +15,6 @@
 
     </head>
 
-    <style>
-
-    </style>
 
     <body>
         <!-- Start Nav -->
@@ -57,16 +54,16 @@
                     <div class="flex-fill">
                         <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto marg-1">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
+                                <a class="nav-link" href="Home.jsp">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="about.html">Sobre Nosotros</a>
+                                <a class="nav-link" href="SobreNosotros.jsp">Sobre Nosotros</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="shop.html">Tienda</a>
+                                <a class="nav-link" href="MostrarArticulo">Tienda</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contacto</a>
+                                <a class="nav-link" href="">Contacto</a>
                             </li>
                         </ul>
                     </div>
@@ -82,7 +79,7 @@
                         <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
                             <i class="fa fa-fw fa-search text-dark mr-2"></i>
                         </a>
-                        
+
                         <div class="navbar align-self-center d-flex">
                             <div class="dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">

@@ -13,13 +13,12 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.Lob;
-import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
@@ -35,8 +34,14 @@ import javax.xml.bind.annotation.XmlTransient;
     @NamedQuery(name = "Articulos.findAll", query = "SELECT a FROM Articulos a"),
     @NamedQuery(name = "Articulos.findById", query = "SELECT a FROM Articulos a WHERE a.id = :id"),
     @NamedQuery(name = "Articulos.findByNombre", query = "SELECT a FROM Articulos a WHERE a.nombre = :nombre"),
-    @NamedQuery(name = "Articulos.findByPrecio", query = "SELECT a FROM Articulos a WHERE a.precio = :precio")})
+    @NamedQuery(name = "Articulos.findByPrecio", query = "SELECT a FROM Articulos a WHERE a.precio = :precio"),
+    @NamedQuery(name = "Articulos.findByImagen", query = "SELECT a FROM Articulos a WHERE a.imagen = :imagen"),
+    @NamedQuery(name = "Articulos.findByNombreCatalogo", query = "SELECT a FROM Articulos a WHERE a.nombreCatalogo = :nombreCatalogo"),
+    @NamedQuery(name = "Articulos.findByCantidadDisponible", query = "SELECT a FROM Articulos a WHERE a.cantidadDisponible = :cantidadDisponible")})
 public class Articulos implements Serializable {
+
+    @OneToMany(mappedBy = "prendaId")
+    private Collection<Carrito> carritoCollection;
 
     private static final long serialVersionUID = 1L;
     @Id
@@ -54,19 +59,27 @@ public class Articulos implements Serializable {
     @Size(max = 65535)
     @Column(name = "descripcion")
     private String descripcion;
-    @JoinColumn(name = "catalogo_id", referencedColumnName = "id")
-    @ManyToOne
-    private Catalogos catalogoId;
-    @OneToMany(mappedBy = "prendaId")
-    private Collection<Pedidos> pedidosCollection;
-    @OneToMany(mappedBy = "prendaId")
-    private Collection<Carrito> carritoCollection;
+    @Size(max = 255)
+    @Column(name = "imagen")
+    private String imagen;
+    @Size(max = 100)
+    @Column(name = "nombre_catalogo")
+    private String nombreCatalogo;
+    @Basic(optional = false)
+    @NotNull
+    @Column(name = "cantidad_disponible")
+    private int cantidadDisponible;
 
     public Articulos() {
     }
 
     public Articulos(Integer id) {
         this.id = id;
+    }
+
+    public Articulos(Integer id, int cantidadDisponible) {
+        this.id = id;
+        this.cantidadDisponible = cantidadDisponible;
     }
 
     public Integer getId() {
@@ -101,30 +114,28 @@ public class Articulos implements Serializable {
         this.descripcion = descripcion;
     }
 
-    public Catalogos getCatalogoId() {
-        return catalogoId;
+    public String getImagen() {
+        return imagen;
     }
 
-    public void setCatalogoId(Catalogos catalogoId) {
-        this.catalogoId = catalogoId;
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
     }
 
-    @XmlTransient
-    public Collection<Pedidos> getPedidosCollection() {
-        return pedidosCollection;
+    public String getNombreCatalogo() {
+        return nombreCatalogo;
     }
 
-    public void setPedidosCollection(Collection<Pedidos> pedidosCollection) {
-        this.pedidosCollection = pedidosCollection;
+    public void setNombreCatalogo(String nombreCatalogo) {
+        this.nombreCatalogo = nombreCatalogo;
     }
 
-    @XmlTransient
-    public Collection<Carrito> getCarritoCollection() {
-        return carritoCollection;
+    public int getCantidadDisponible() {
+        return cantidadDisponible;
     }
 
-    public void setCarritoCollection(Collection<Carrito> carritoCollection) {
-        this.carritoCollection = carritoCollection;
+    public void setCantidadDisponible(int cantidadDisponible) {
+        this.cantidadDisponible = cantidadDisponible;
     }
 
     @Override
@@ -150,6 +161,15 @@ public class Articulos implements Serializable {
     @Override
     public String toString() {
         return "Tablas.Articulos[ id=" + id + " ]";
+    }
+
+    @XmlTransient
+    public Collection<Carrito> getCarritoCollection() {
+        return carritoCollection;
+    }
+
+    public void setCarritoCollection(Collection<Carrito> carritoCollection) {
+        this.carritoCollection = carritoCollection;
     }
     
 }

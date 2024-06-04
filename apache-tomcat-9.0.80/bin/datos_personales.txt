@@ -1,0 +1,30 @@
+Javier
+Arriola Valverde
+2003-08-16
+tecnico
+hombre
+deportes lectura tecnologia gastronomia musica cine 
+Marta
+Valverde Grande
+1974-02-25
+auxiliar
+mujer
+deportes musica cine 
+Lucas
+Jaén Ponce
+2003-08-08
+tecnico
+hombre
+deportes tecnologia 
+Dolores
+Pacheco García
+2013-06-15
+tecnico
+mujer
+deportes 
+Mario
+Solís García
+1960-05-10
+director
+hombre
+lectura musica cine 
