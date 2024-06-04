@@ -15,11 +15,16 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 -->
+<<<<<<< HEAD
 <tomcat-users xmlns="http://tomcat.apache.org/xml"
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
               xsi:schemaLocation="http://tomcat.apache.org/xml tomcat-users.xsd"
               version="1.0">
 <!--
+=======
+<tomcat-users xmlns="http://tomcat.apache.org/xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://tomcat.apache.org/xml tomcat-users.xsd">
+    <!--
+>>>>>>> 873762f5a5ce6956e9a40cfdd098d35c9592e5a4
   By default, no user is included in the "manager-gui" role required
   to operate the "/manager/html" web application.  If you wish to use this app,
   you must define such a user - the username and password are arbitrary.
@@ -35,22 +40,38 @@
   application, do not forget to remove the <!.. ..> that surrounds them. You
   will also need to set the passwords to something appropriate.
 -->
+<<<<<<< HEAD
 <!--
   <user username="admin" password="<must-be-changed>" roles="manager-gui"/>
   <user username="robot" password="<must-be-changed>" roles="manager-script"/>
 -->
 <!--
+=======
+    <!--
+  <user username="admin" password="<must-be-changed>" roles="manager-gui"/>
+  <user username="robot" password="<must-be-changed>" roles="manager-script"/>
+-->
+    <!--
+>>>>>>> 873762f5a5ce6956e9a40cfdd098d35c9592e5a4
   The sample user and role entries below are intended for use with the
   examples web application. They are wrapped in a comment and thus are ignored
   when reading this file. If you wish to configure these users for use with the
   examples web application, do not forget to remove the <!.. ..> that surrounds
   them. You will also need to set the passwords to something appropriate.
 -->
+<<<<<<< HEAD
 <!--
+=======
+    <!--
+>>>>>>> 873762f5a5ce6956e9a40cfdd098d35c9592e5a4
   <role rolename="tomcat"/>
   <role rolename="role1"/>
   <user username="tomcat" password="<must-be-changed>" roles="tomcat"/>
   <user username="both" password="<must-be-changed>" roles="tomcat,role1"/>
   <user username="role1" password="<must-be-changed>" roles="role1"/>
 -->
+<<<<<<< HEAD
+=======
+    <user password="root" roles="manager-script,admin" username="root"/>
+>>>>>>> 873762f5a5ce6956e9a40cfdd098d35c9592e5a4
 </tomcat-users>

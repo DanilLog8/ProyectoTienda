@@ -1,0 +1,12 @@
+13-Feb-2024 08:48:20.067 INFO [http-nio-8080-exec-3] org.apache.catalina.core.ApplicationContext.log Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+13-Feb-2024 08:48:20.067 INFO [http-nio-8080-exec-3] org.apache.catalina.core.ApplicationContext.log Manager: init: Global resources are available
+13-Feb-2024 08:48:20.102 INFO [http-nio-8080-exec-2] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+13-Feb-2024 08:48:20.106 INFO [http-nio-8080-exec-10] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+13-Feb-2024 08:48:20.200 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log Manager: stop: Stopping web application '/Empresa2023'
+13-Feb-2024 08:48:20.212 INFO [http-nio-8080-exec-5] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/Empresa2023'
+13-Feb-2024 08:48:41.906 INFO [http-nio-8080-exec-4] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+13-Feb-2024 08:50:44.662 INFO [http-nio-8080-exec-15] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+13-Feb-2024 08:51:09.611 INFO [http-nio-8080-exec-14] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+13-Feb-2024 08:51:29.574 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+13-Feb-2024 09:25:14.766 INFO [http-nio-8080-exec-12] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+13-Feb-2024 09:34:09.656 INFO [http-nio-8080-exec-20] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
